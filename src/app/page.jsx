@@ -12,7 +12,7 @@ function Home() {
         my: 10,
       }}
     >
-      Home
+      Homeee
     </Container>
   );
 }

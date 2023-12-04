@@ -1,7 +1,3 @@
-@font-face {
-  font-family: Jaapokkisubtract-Regular;
-  src: url("/src/assets/fonts/jaapokkisubtract-regular.ttf");
-}
 .container-home-section-welcome {
   background-image: url("../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro-responsive.png");
   background-size: cover;

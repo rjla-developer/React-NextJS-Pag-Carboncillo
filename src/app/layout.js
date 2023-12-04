@@ -1,10 +1,14 @@
-import Navbar from '@/assets/components/navbar/Navbar';
 import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] })
 
-//SCSS
+//CSS
 import "../assets/styles/css/global.css"
 
-const inter = Inter({ subsets: ['latin'] })
+
+//Components:
+import Navbar from '@/assets/components/navbar/Navbar';
+import ThemeProviderMUI from '@/assets/components/global/ThemeProviderMUI';
+
 
 export const metadata = {
   title: "Carboncillo",
@@ -27,11 +31,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body className={inter.className}>
-         <Navbar />
-        {children}
+        <ThemeProviderMUI>
+          <Navbar />
+          {children}
+        </ThemeProviderMUI>
         
       </body>
     </html>

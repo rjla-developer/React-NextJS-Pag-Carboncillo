@@ -1,0 +1,12 @@
+@use "home_section_welcome_config" as config;
+
+.container-home-section-welcome {
+  background-image: url("../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro-responsive.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media (min-width: config.$breakpoint-md) {
+    background-image: url("../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro.jpg");
+  }
+}

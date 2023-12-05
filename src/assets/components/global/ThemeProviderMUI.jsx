@@ -12,6 +12,18 @@ function ThemeProviderMUI({children}) {
           contrastText: '#FFFFFF',
         },
       },
+      components: {
+        MuiButton: {
+          styleOverrides: {
+            root: {
+              borderRadius: 10,
+              textTransform: "none",
+              fontSize: 18,
+            },
+          },
+        },
+      },
+    
   });
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }

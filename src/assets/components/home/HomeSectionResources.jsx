@@ -53,7 +53,7 @@ function HomeSectionResources() {
       <Grid
         container
         spacing={{ xs: 0, md: 5 }}
-        rowSpacing={{xs: 3, md: 0}}
+        rowSpacing={{xs: 3, md: 5}}
         py={{xs: 5, md: 10}}
         sx={{
           display: "flex",

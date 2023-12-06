@@ -1,5 +1,8 @@
 import React from "react";
 
+//Next.js:
+import Image from "next/image";
+
 //Material UI:
 import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -7,7 +10,6 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import imgFeed from "../../images/home/homeSectionOurWork/diseno-feed-instagram-increibles.png";
 import imgBrandDesign from "../../images/home/homeSectionOurWork/diseño-de-marca.png";
 import imgCorporateStationery from "../../images/home/homeSectionOurWork/papeleria-corporativa.jpeg";
-import Image from "next/image";
 
 function HomeSectionOurWork() {
   const dataOurWork = [
@@ -15,17 +17,19 @@ function HomeSectionOurWork() {
       id: 1,
       title: "Feed",
       img: imgFeed,
-      alt: "",
+      alt: "Diseño elegante de un feed de instagram empresarial",
     },
     {
       id: 2,
       title: "Diseño de marca",
       img: imgBrandDesign,
+      alt: "Diseño elegante de marca",
     },
     {
       id: 3,
       title: "Papelería corporativa",
       img: imgCorporateStationery,
+      alt: "Diseño papelería empresarial",
     },
   ];
   return (
@@ -70,7 +74,7 @@ function HomeSectionOurWork() {
               <Image
                 style={{ borderRadius: "20px" }}
                 src={item.img}
-                alt=""
+                alt={item.alt}
                 width={350}
                 height={350}
               />

@@ -106,7 +106,11 @@ function Navbar() {
     <>
       <Box sx={{ flexGrow: 1 }}>
         {/* App Bar */}
-        <AppBar position="fixed" color="transparent" sx={{boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)"}}>
+        <AppBar
+          position="fixed"
+          color="transparent"
+          sx={{ boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)" }}
+        >
           <Toolbar sx={{ py: { xs: 1, md: 2 } }}>
             <IconButton
               edge="start"
@@ -199,22 +203,31 @@ function Navbar() {
           open={drawerOpen}
           onClose={handleDrawerClose}
         >
-          <List sx={{ width: 200 }}>
+          <List sx={{ width: 250 }}>
             {dataMenu.map((itemMenu) => (
-              <Link
-                key={itemMenu.TitleMenu}
-                href={itemMenu.Link}
-                className="link-without-style"
-              >
-                <ListItem
-                  button
-                  color="inherit"
-                  onClick={handleDrawerClose}
-                  sx={{ color: "black", textDecoration: "none" }}
-                >
-                  <ListItemText primary={itemMenu.TitleMenu} />
-                </ListItem>
-              </Link>
+              <Box key={itemMenu.TitleMenu}>
+                {itemMenu.Link != null ? (
+                  <Link href={itemMenu.Link} className="link-without-style">
+                    <ListItem
+                      button
+                      color="inherit"
+                      onClick={handleDrawerClose}
+                      sx={{ color: "black", textDecoration: "none" }}
+                    >
+                      <ListItemText primary={itemMenu.TitleMenu} />
+                    </ListItem>
+                  </Link>
+                ) : (
+                  <ListItem
+                    button
+                    color="inherit"
+                    onClick={handleDrawerClose}
+                    sx={{ color: "black", textDecoration: "none" }}
+                  >
+                    <ListItemText primary={itemMenu.TitleMenu} />
+                  </ListItem>
+                )}
+              </Box>
             ))}
           </List>
         </Drawer>
@@ -225,34 +238,15 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Grid container spacing={2} className="py-3 mx-2">
+            <Grid container spacing={2}>
               <Grid item xs={12}>
-                <Typography variant="h5" className="fw-bold">
-                  Servicios
-                </Typography>
+                <Typography variant="h5">Servicios</Typography>
               </Grid>
-              {dataServices.map((servicio, index) => (
-                <Grid item xs={6} key={index} sx={{color: "white"}}>
-                  <Link href={servicio.href} className="link-without-style">
-                    <Box className="itemService p-2">
-                      <Grid container spacing={1}>
-                        {/* <Grid item>
-                          <Image
-                            src={servicio.iconSrc}
-                            alt={`icono de ${servicio.title}`}
-                            width={25}
-                            height={25}
-                          />
-                        </Grid> */}
-                        <Grid item>
-                          <Typography variant="h6" className="mb-1">
-                            {servicio.title}
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                      <Typography variant="body2" className="font-size-6 mb-0">
-                        {servicio.description}
-                      </Typography>
+              {dataServices.map((servicio) => (
+                <Grid item xs={6} key={servicio.title} sx={{ color: "white" }}>
+                  <Link href={servicio.href}>
+                    <Box>
+                      <Typography variant="h6">{servicio.title}</Typography>
                     </Box>
                   </Link>
                 </Grid>

@@ -25,8 +25,6 @@ function HomeSectionVideos() {
         py={{ xs: 2, md: 3 }}
         spacing={{ xs: 0, md: 11.35 }}
         rowSpacing={{ xs: 5, md: 0 }}
-        xs={12}
-        md={"auto"}
         sx={{
           display: "flex",
           justifyContent: "center",

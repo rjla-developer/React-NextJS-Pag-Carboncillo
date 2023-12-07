@@ -34,14 +34,14 @@ function HomeSectionResources() {
       backgroundColorItem: "background-orange",
     },
     {
-      id: "campanas",
+      id: "campanas-google",
       titleService: "Google Ads",
       descService:
         "Es hora de llevar tu negocio al siguiente nivel, conecta con tu audiencia mediante diversos tipos de publicidad en el buscador más utilizado.",
       backgroundColorItem: "background-blue",
     },
     {
-      id: "campanas",
+      id: "campanas-facebook",
       titleService: "Facebook Ads",
       descService:
         "Un grupo de profesionales listos para ayudarte a conectar con tu audiencia.",

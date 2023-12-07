@@ -66,8 +66,6 @@ function HomeSectionCommunity() {
         pt={10}
         py={{ xs: 10, md: 13 }}
         spacing={{ xs: 0, md: 5 }}
-        xs={12}
-        md={"auto"}
         sx={{
           display: "flex",
           justifyContent: "center",

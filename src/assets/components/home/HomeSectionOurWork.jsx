@@ -39,8 +39,6 @@ function HomeSectionOurWork() {
         my={{ xs: 2, md: 5 }}
         spacing={{ xs: 0, md: 5 }}
         rowSpacing={{ xs: 5, md: 0 }}
-        xs={12}
-        md={"auto"}
         sx={{
           display: "flex",
           justifyContent: "center",

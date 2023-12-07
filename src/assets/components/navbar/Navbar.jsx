@@ -29,7 +29,7 @@ import { IoMenu } from "react-icons/io5";
 import imgCarboncillo from "../../images/global/logo/logo-compañia-de-marketing-digital.png";
 import imgCarboncilloCompact from "../../images/global/logo/logo-compacto-compañia-de-marketing-digital.webp";
 
-function Navbar() {
+function Navbar({styleNavbar}) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [showParagraph, setShowParagraph] = useState(false);
 
@@ -119,7 +119,7 @@ function Navbar() {
               onClick={handleDrawerOpen}
               sx={{
                 fontSize: 40,
-                color: "white",
+                color: styleNavbar,
                 display: { xs: "flex", md: "none" },
                 mr: "auto",
               }}
@@ -166,13 +166,13 @@ function Navbar() {
                       <Button
                         color="inherit"
                         onMouseEnter={itemMenu.button}
-                        sx={{ color: "white" }}
+                        sx={{ color: styleNavbar }}
                       >
                         {itemMenu.TitleMenu}
                       </Button>
                     ) : (
                       <Link href={itemMenu.Link}>
-                        <Button color="inherit" sx={{ color: "white" }}>
+                        <Button color="inherit" sx={{ color: styleNavbar }}>
                           {itemMenu.TitleMenu}
                         </Button>
                       </Link>
@@ -185,7 +185,7 @@ function Navbar() {
             <Box
               sx={{
                 fontSize: 40,
-                color: "white",
+                color: styleNavbar,
                 display: { xs: "flex", md: "none" },
                 ml: "auto",
                 visibility: "hidden",
@@ -243,7 +243,7 @@ function Navbar() {
                 <Typography variant="h5">Servicios</Typography>
               </Grid>
               {dataServices.map((servicio) => (
-                <Grid item xs={6} key={servicio.title} sx={{ color: "white" }}>
+                <Grid item xs={6} key={servicio.title} sx={{ color: styleNavbar }}>
                   <Link href={servicio.href}>
                     <Box>
                       <Typography variant="h6">{servicio.title}</Typography>

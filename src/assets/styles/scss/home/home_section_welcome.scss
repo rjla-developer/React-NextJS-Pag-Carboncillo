@@ -7,6 +7,10 @@
   height: 100vh;
 
   @media (min-width: config.$breakpoint-md) {
-    background-image: url("../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro.jpg");
+    background-image: url("../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro.png");
   }
+}
+
+.container-home-section-welcome p {
+  font-family: "Jaapokkisubtract-Regular";
 }

@@ -22,7 +22,7 @@ function HomeSectionWelcome() {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            sx={{ height: "100vh", mx: { xs: 1, md: 20, lg: 30 } }}
+            sx={{ height: "100vh", mx: { xs: 1, md: 20, lg: 20 } }}
           >
             <Typography
               className={roboto.className}
@@ -30,6 +30,7 @@ function HomeSectionWelcome() {
                 color: "white",
                 fontSize: { xs: 40, md: 60, lg: 70 },
                 textAlign: "center",
+                textTransform: "uppercase"
               }}
             >
               Nuestra pasión se basa en la{" "}

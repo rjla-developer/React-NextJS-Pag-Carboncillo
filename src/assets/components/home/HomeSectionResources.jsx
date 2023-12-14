@@ -53,8 +53,8 @@ function HomeSectionResources() {
       <Grid
         container
         spacing={{ xs: 0, md: 5 }}
-        rowSpacing={{xs: 3, md: 5}}
-        py={{xs: 5, md: 10}}
+        rowSpacing={{ xs: 3, md: 5 }}
+        py={{ xs: 5, md: 10 }}
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -62,7 +62,15 @@ function HomeSectionResources() {
         }}
       >
         <Grid item xs={12}>
-          <Typography textAlign={"center"} color={"white"} fontSize={{xs: 30, md: 50}}>
+          <Typography
+            className="font-family-jaapokkisubtract"
+            sx={{
+              textTransform: "uppercase",
+              color: "white",
+              textAlign: "center",
+              fontSize: { xs: 30, md: 50 },
+            }}
+          >
             Recursos
           </Typography>
         </Grid>

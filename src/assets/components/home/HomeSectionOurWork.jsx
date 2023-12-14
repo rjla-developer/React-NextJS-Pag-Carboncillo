@@ -47,6 +47,7 @@ function HomeSectionOurWork() {
       >
         <Grid item xs={12}>
           <Typography
+            className="font-family-jaapokkisubtract"
             textAlign={"center"}
             color={"white"}
             fontSize={{ xs: 30, md: 50 }}

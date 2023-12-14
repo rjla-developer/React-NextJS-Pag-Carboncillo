@@ -7,4 +7,20 @@ body {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: Jaapokkisubtract-Regular;
+  src: url("/fonts/jaapokkisubtract-regular.ttf");
+}
+.font-family-jaapokkisubtract {
+  font-family: "Jaapokkisubtract-Regular";
+}
+
+@font-face {
+  font-family: FreeSans;
+  src: url("/fonts/free-sans.ttf");
+}
+.font-family-free-sans {
+  font-family: "FreeSans";
+}
+
 /*# sourceMappingURL=global.css.map */

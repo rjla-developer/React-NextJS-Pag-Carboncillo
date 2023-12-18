@@ -3,7 +3,7 @@ import React from "react";
 import "../../styles/css/home/home_section_welcome.css";
 
 //Material UI:
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 //Tipografías:
 import { Noto_Sans_Adlam } from "next/font/google";

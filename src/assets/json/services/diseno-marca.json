@@ -1,0 +1,43 @@
+{
+  "id": "diseno-de-marca",
+  "descriptionPage":"Nuestros expertos en diseño de marca te ayudarán a destacar en el mercado con soluciones profesionales y estratégicas. ¡Aumenta ventas y visibilidad!",
+  "keywordsPage":"diseño de marca, marketing digital, análisis de mercado, palabras clave",
+  "general": {
+    "txtColor": "txt-color-rose",
+    "borderColor": "border-color-rose",
+    "background": "background-rose",
+    "backgroundPage": "bg-diseno-de-marca"
+  },
+  "seccWelcome": {
+    "description": "Creamos una marca única e irrepetible"
+  },
+  "seccPackages": {
+    "title": "DISEÑO DE MARCA",
+    "description": "Tenemos para ti una gran variedad de soluciones profesionales para lograr tus objetivos. Aumenta tus ventas a través del canal digital.",
+    "packages": [
+      {
+        "title": "Diseño de marca $5,999 MXN",
+        "description": null,
+        "include": [
+          "Análisis de mercado.",
+          "Selección de palabras clave.",
+          "Creación de un anuncio.",
+          "Reporte de resultados."
+        ],
+        "restrictions": null,
+        "messageRestrictions": true
+      }
+    ]
+  },
+  "seccCarousel": {
+    "title": "NUESTROS PROYECTOS SOCIAL MEDIA",
+    "description": "Da un vistazo a nuestro trabajo",
+    "examples": [
+      "https://dummyimage.com/300x300/356cb8/ffffff",
+      "https://lirp.cdn-website.com/45d4b4ac/dms3rep/multi/opt/602f9b257a6668ffd03d455b28b00b9a-b6d9cb34-1920w.jpg",
+      "https://dummyimage.com/300x300/356cb8/ffffff",
+      "https://dummyimage.com/300x300/356cb8/ffffff",
+      "https://lirp.cdn-website.com/45d4b4ac/dms3rep/multi/opt/602f9b257a6668ffd03d455b28b00b9a-b6d9cb34-1920w.jpg"
+    ]
+  }
+}

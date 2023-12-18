@@ -28,8 +28,9 @@ import { IoMenu } from "react-icons/io5";
 //Images
 import imgCarboncillo from "../../images/global/logo/logo-compañia-de-marketing-digital.png";
 import imgCarboncilloCompact from "../../images/global/logo/logo-compacto-compañia-de-marketing-digital.webp";
+import imgCarboncilloDarkStyle from "../../images/global/logo/logo-carboncillo-dark-style.png";
 
-function Navbar({styleNavbar}) {
+function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [showParagraph, setShowParagraph] = useState(false);
 
@@ -119,7 +120,7 @@ function Navbar({styleNavbar}) {
               onClick={handleDrawerOpen}
               sx={{
                 fontSize: 40,
-                color: styleNavbar,
+                color: "white",
                 display: { xs: "flex", md: "none" },
                 mr: "auto",
               }}
@@ -134,13 +135,13 @@ function Navbar({styleNavbar}) {
                   display: { xs: "none", md: "flex" },
                 }}
               >
-                <Image
-                  src={imgCarboncillo}
-                  alt="Logo de la empresa Carboncillo"
-                  width={240}
-                  height={18}
-                  priority
-                />
+                  <Image
+                    src={imgCarboncillo}
+                    alt="Logo de la empresa Carboncillo"
+                    width={240}
+                    height={18}
+                    priority
+                  />
               </Button>
               <Button
                 color="inherit"
@@ -166,13 +167,13 @@ function Navbar({styleNavbar}) {
                       <Button
                         color="inherit"
                         onMouseEnter={itemMenu.button}
-                        sx={{ color: styleNavbar }}
+                        sx={{ color: "white" }}
                       >
                         {itemMenu.TitleMenu}
                       </Button>
                     ) : (
                       <Link href={itemMenu.Link}>
-                        <Button color="inherit" sx={{ color: styleNavbar }}>
+                        <Button color="inherit" sx={{ color: "white" }}>
                           {itemMenu.TitleMenu}
                         </Button>
                       </Link>
@@ -185,7 +186,7 @@ function Navbar({styleNavbar}) {
             <Box
               sx={{
                 fontSize: 40,
-                color: styleNavbar,
+                color: "white",
                 display: { xs: "flex", md: "none" },
                 ml: "auto",
                 visibility: "hidden",
@@ -243,7 +244,7 @@ function Navbar({styleNavbar}) {
                 <Typography variant="h5">Servicios</Typography>
               </Grid>
               {dataServices.map((servicio) => (
-                <Grid item xs={6} key={servicio.title} sx={{ color: styleNavbar }}>
+                <Grid item xs={6} key={servicio.title} sx={{ color: "white" }}>
                   <Link href={servicio.href}>
                     <Box>
                       <Typography variant="h6">{servicio.title}</Typography>

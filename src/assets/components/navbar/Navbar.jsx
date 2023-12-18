@@ -28,7 +28,6 @@ import { IoMenu } from "react-icons/io5";
 //Images
 import imgCarboncillo from "../../images/global/logo/logo-compañia-de-marketing-digital.png";
 import imgCarboncilloCompact from "../../images/global/logo/logo-compacto-compañia-de-marketing-digital.webp";
-import imgCarboncilloDarkStyle from "../../images/global/logo/logo-carboncillo-dark-style.png";
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);

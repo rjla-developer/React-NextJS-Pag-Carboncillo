@@ -13,7 +13,6 @@ function HomeSectionWelcome() {
   return (
     <Container
       maxWidth={false}
-      sx={{}}
       className="container-home-section-welcome"
     >
       <Grid container sx={{}}>

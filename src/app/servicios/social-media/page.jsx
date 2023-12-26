@@ -7,6 +7,7 @@ import { Container } from "@mui/material";
 
 //Components:
 import ServiceSectionWelcome from "@/assets/components/services/ServiceSectionWelcome";
+import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPackage";
 
 function Servicio() {
   return (
@@ -15,6 +16,7 @@ function Servicio() {
       className="container-service-social-media"
     >
       <ServiceSectionWelcome />
+      <ServiceSectionPackage />
     </Container>
   );
 }

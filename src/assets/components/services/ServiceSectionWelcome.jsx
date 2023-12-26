@@ -9,7 +9,8 @@ function ServiceSectionWelcome() {
       <Grid container>
         <Grid
           item
-          xs={7}
+          xs={12}
+          md={7}
           sx={{
             display: "flex",
             alignItems: "center",
@@ -17,12 +18,11 @@ function ServiceSectionWelcome() {
             height: "100vh",
           }}
         >
-          <Box>
+          <Box sx={{textAlign: {xs: "center", md: "start"},}}>
             <Typography
               sx={{
                 color: "white",
-                fontSize: { xs: 40, md: 60, lg: 60 },
-                textAlign: "start",
+                fontSize: { xs: 40, md: 60},
                 textTransform: "uppercase",
                 mr: { xs: 0, md: 20 },
               }}
@@ -36,7 +36,7 @@ function ServiceSectionWelcome() {
             <Button
               variant="contained"
               sx={{
-                mt: 2,
+                mt: {xs: 4, md: 2},
                 color: "black",
                 backgroundColor: "#D9D9D9",
                 "&:hover": {

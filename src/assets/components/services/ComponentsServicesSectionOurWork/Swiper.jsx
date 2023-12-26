@@ -2,58 +2,62 @@
 import React, { useState, useEffect } from "react";
 import "../../../styles/css/services/components/swiper.css";
 
+//NextJS:
+import Image from "next/image";
+
 //Material UI:
 import { Grid, Box, Typography, Button } from "@mui/material";
 
 //Images:
-import imgCarousel1 from "../../../images/services/socialMedia/carousel/1.png"
-import Image from "next/image";
+import imgCarousel1 from "../../../images/services/socialMedia/carousel/1.png";
+import imgCarousel2 from "../../../images/services/socialMedia/carousel/2.png";
+import imgCarousel3 from "../../../images/services/socialMedia/carousel/3.png";
+import imgCarousel4 from "../../../images/services/socialMedia/carousel/4.png";
+import imgCarousel5 from "../../../images/services/socialMedia/carousel/5.png";
+import imgCarousel6 from "../../../images/services/socialMedia/carousel/6.png";
+import imgCarousel7 from "../../../images/services/socialMedia/carousel/7.png";
+import imgCarousel8 from "../../../images/services/socialMedia/carousel/8.png";
 
 const dataSwiper = [
   {
     id: 0,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_01.jpg",
+    image: imgCarousel1,
+    alt: ""
   },
   {
     id: 1,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_02.jpg",
+    image: imgCarousel2,
+    alt: ""
   },
   {
     id: 2,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_03.jpg",
+    image: imgCarousel3,
+    alt: ""
   },
   {
     id: 3,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_04.jpg",
+    image: imgCarousel4,
+    alt: ""
   },
   {
     id: 4,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_05.jpg",
+    image: imgCarousel5,
+    alt: ""
   },
   {
     id: 5,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_04.jpg",
+    image: imgCarousel6,
+    alt: ""
   },
   {
     id: 6,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_05.jpg",
+    image: imgCarousel7,
+    alt: ""
   },
   {
     id: 7,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_04.jpg",
-  },
-  {
-    id: 8,
-    background:
-      "https://raw.githubusercontent.com/Programith/Images/main/background_05.jpg",
+    image: imgCarousel8,
+    alt: ""
   },
 ];
 
@@ -92,15 +96,16 @@ const Swiper = () => {
           {dataSwiper.map((dataItem) => {
             return (
               <Button
-                sx={{ color: "rgb(255, 255, 255, .5)"/* , mr: 30 */}}
+                sx={{ color: "rgb(255, 255, 255, .5)" /* , mr: 30 */ }}
                 key={dataItem.id}
                 item
                 onClick={() => setItemActive(dataItem.id)}
                 className={`option ${
                   itemActive == dataItem.id ? "active" : null
                 }`}
+                /* style={{"--optionBackground": 'url(https://raw.githubusercontent.com/Programith/Images/main/background_03.jpg)'}} */
               >
-                <Image src={imgCarousel1} /* width={250} height={250} *//>
+                <Image src={dataItem.image} alt={dataItem.alt}/>
               </Button>
             );
           })}

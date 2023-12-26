@@ -96,14 +96,13 @@ const Swiper = () => {
           {dataSwiper.map((dataItem) => {
             return (
               <Button
-                sx={{ color: "rgb(255, 255, 255, .5)" /* , mr: 30 */ }}
+                sx={{ color: "rgb(255, 255, 255, .5)"}}
                 key={dataItem.id}
                 item
                 onClick={() => setItemActive(dataItem.id)}
                 className={`option ${
                   itemActive == dataItem.id ? "active" : null
                 }`}
-                /* style={{"--optionBackground": 'url(https://raw.githubusercontent.com/Programith/Images/main/background_03.jpg)'}} */
               >
                 <Image src={dataItem.image} alt={dataItem.alt}/>
               </Button>

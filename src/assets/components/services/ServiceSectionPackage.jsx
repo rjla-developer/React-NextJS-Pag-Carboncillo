@@ -4,10 +4,10 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CardPackage from "./ComponentsServicesSectionPackage/CardPackage";
 
-function ServiceSectionPackage({dataSectionPackage}) {
+function ServiceSectionPackage({ dataSectionPackage }) {
   return (
     <Container sx={{ color: "white", py: 5 }}>
-      <Grid container >
+      <Grid container>
         <Grid item xs={12}>
           <Box>
             <Typography
@@ -15,7 +15,7 @@ function ServiceSectionPackage({dataSectionPackage}) {
                 textTransform: "uppercase",
                 textAlign: "center",
                 fontSize: { xs: 30, lg: 45 },
-                fontWeight: '900'
+                fontWeight: "900",
               }}
             >
               Planes básicos

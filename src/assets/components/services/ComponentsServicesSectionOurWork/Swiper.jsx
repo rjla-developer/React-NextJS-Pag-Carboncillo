@@ -11,13 +11,13 @@ import { Grid, Box, Button } from "@mui/material";
 const Swiper = ({ dataSectionOurWorkSwiper }) => {
   const [itemActive, setItemActive] = useState(2);
 
-  /* useEffect(() => {
+  useEffect(() => {
     const intervalId = setInterval(() => {
-      setItemActive((prevItem) => (prevItem + 1) % dataSwiper.length);
+      setItemActive((prevItem) => (prevItem + 1) % dataSectionOurWorkSwiper.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []); */
+  }, [dataSectionOurWorkSwiper]);
 
   return (
     <Grid

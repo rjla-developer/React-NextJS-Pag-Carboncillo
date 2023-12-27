@@ -1,9 +1,10 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 
-import '../../../assets/styles/css/services/socialMedia/service_social_media.css'
+import "../../../assets/styles/css/services/socialMedia/service_social_media.css";
 
 //Material UI:
-import { Container } from "@mui/material";
+import { Box, Container} from "@mui/material";
 
 //Components:
 import ServiceSectionWelcome from "@/assets/components/services/ServiceSectionWelcome";
@@ -21,10 +22,13 @@ import imgCarousel7 from "../../../assets/images/services/socialMedia/carousel/7
 import imgCarousel8 from "../../../assets/images/services/socialMedia/carousel/8.png";
 
 function Servicio() {
+  const containerSectionPackage = useRef(null);
+
   const dataSectionWelcome = {
     title: "Conecta con tu audiencia",
-    description: "Llega a una comunidad participativa, trabajando en conjunto del contenido orgánico.",
-  }
+    description:
+      "Llega a una comunidad participativa, trabajando en conjunto del contenido orgánico.",
+  };
 
   const dataSectionPackage = [
     {
@@ -78,53 +82,67 @@ function Servicio() {
     {
       id: 0,
       image: imgCarousel1,
-      alt: ""
+      alt: "Post de una canasta de fruta con frutas importadas de México",
     },
     {
       id: 1,
       image: imgCarousel2,
-      alt: ""
+      alt: "Post para la festividad de hallowen de una Hamburguesa con apariencia deliciosa y de fondo telaraña",
     },
     {
       id: 2,
       image: imgCarousel3,
-      alt: ""
+      alt: "Post de una persona meditando y mariposas cerca de él",
     },
     {
       id: 3,
       image: imgCarousel4,
-      alt: ""
+      alt: "Post de una mujer con piel muy bien cuidada",
     },
     {
       id: 4,
       image: imgCarousel5,
-      alt: ""
+      alt: "Post de una mujer pensando acerca de los emabarzos",
     },
     {
       id: 5,
       image: imgCarousel6,
-      alt: ""
+      alt: "Post de una mujer deportista insitando a que vengan a entrenar con ella",
     },
     {
       id: 6,
       image: imgCarousel7,
-      alt: ""
+      alt: "Post de una pizza con fuego y un mensaje que dice 'La mejor pizza de la ciudad",
     },
     {
       id: 7,
       image: imgCarousel8,
-      alt: ""
+      alt: "Post de una persona sosteniendo unos lentes y un mensaje que dice 'Lentes con protección uv en $35",
     },
   ];
 
+  const handleButtonClick = () => {
+    containerSectionPackage.current.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+  };
+
   return (
-    <Container
-      maxWidth={false}
-      className="container-service-social-media"
-    >
-      <ServiceSectionWelcome dataSectionWelcome={dataSectionWelcome}/>
-      <ServiceSectionPackage dataSectionPackage={dataSectionPackage} />
-      <ServiceSectionOurWork dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}/>
+    <Container maxWidth={false} className="container-service-social-media">
+      <ServiceSectionWelcome
+        dataSectionWelcome={dataSectionWelcome}
+        onButtonClick={handleButtonClick}
+      />
+
+      <Box ref={containerSectionPackage}>
+        <ServiceSectionPackage dataSectionPackage={dataSectionPackage} />
+      </Box>
+
+      <ServiceSectionOurWork
+        dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}
+      />
     </Container>
   );
 }

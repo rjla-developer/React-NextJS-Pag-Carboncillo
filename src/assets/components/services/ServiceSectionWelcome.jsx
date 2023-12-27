@@ -3,7 +3,7 @@ import React from "react";
 //Material UI:
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
-function ServiceSectionWelcome({dataSectionWelcome}) {
+function ServiceSectionWelcome({dataSectionWelcome, onButtonClick }) {
   return (
     <Container>
       <Grid container>
@@ -44,6 +44,7 @@ function ServiceSectionWelcome({dataSectionWelcome}) {
                   backgroundColor: "white",
                 },
               }}
+              onClick={onButtonClick}
             >
               Ver soluciones
             </Button>

@@ -52,6 +52,9 @@ function HomeSectionOurWork() {
             color={"white"}
             fontSize={{ xs: 30, md: 50 }}
             mb={{ xs: 0, md: 7 }}
+            sx={{
+              letterSpacing: 8
+            }}
           >
             NUESTRO{" "}
             <Typography variant="span" color={"primary"}>

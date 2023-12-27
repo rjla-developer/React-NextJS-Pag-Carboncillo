@@ -78,6 +78,7 @@ function HomeSectionCommunity() {
             textAlign={"center"}
             color={"white"}
             fontSize={{ xs: 30, md: 50 }}
+            sx={{letterSpacing: 8}}
           >
             COMUNIDAD
           </Typography>

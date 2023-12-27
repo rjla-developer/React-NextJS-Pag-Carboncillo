@@ -4,7 +4,7 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Swiper from "./ComponentsServicesSectionOurWork/Swiper";
 
-function ServiceSectionOurWork() {
+function ServiceSectionOurWork({dataSectionOurWorkSwiper}) {
   return (
     <Container sx={{ py: 10 }}>
       <Grid
@@ -20,15 +20,16 @@ function ServiceSectionOurWork() {
                 textTransform: "uppercase",
                 textAlign: "center",
                 fontSize: { xs: 30, lg: 40 },
+                fontWeight: '900'
               }}
             >
-              proyectos básicos
+              Proyectos básicos
             </Typography>
             <Typography sx={{ textAlign: "center", mt: 2 }}>
               ¡Da un vistazo a nuestro trabajo!
             </Typography>
 
-            <Swiper />
+            <Swiper dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}/>
           </Box>
         </Grid>
       </Grid>

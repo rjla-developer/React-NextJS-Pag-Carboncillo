@@ -96,11 +96,11 @@ function Navbar() {
     },
   ];
 
-  useEffect(() => {
+  /* useEffect(() => {
     console.log(showParagraph);
 
     return () => {};
-  }, [showParagraph]);
+  }, [showParagraph]); */
 
   return (
     <>

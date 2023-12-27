@@ -69,6 +69,7 @@ function HomeSectionResources() {
               color: "white",
               textAlign: "center",
               fontSize: { xs: 30, md: 50 },
+              letterSpacing: 8
             }}
           >
             Recursos

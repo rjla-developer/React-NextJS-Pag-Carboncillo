@@ -3,14 +3,14 @@ import React from "react";
 //Material UI:
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
-function ServiceSectionWelcome() {
+function ServiceSectionWelcome({dataSectionWelcome}) {
   return (
     <Container>
       <Grid container>
         <Grid
           item
           xs={12}
-          md={7}
+          md={8}
           sx={{
             display: "flex",
             alignItems: "center",
@@ -20,18 +20,19 @@ function ServiceSectionWelcome() {
         >
           <Box sx={{textAlign: {xs: "center", md: "start"},}}>
             <Typography
+            className="font-family-jaapokkisubtract"
               sx={{
                 color: "white",
                 fontSize: { xs: 40, md: 60},
                 textTransform: "uppercase",
                 mr: { xs: 0, md: 20 },
+                letterSpacing: 8
               }}
             >
-              Conecta con tu audiencia
+              {dataSectionWelcome.title}
             </Typography>
             <Typography sx={{ color: "white", mt: 2 }}>
-              Llega a una comunidad participativa, trabajando en conjunto del
-              contenido orgánico.
+              {dataSectionWelcome.description}
             </Typography>
             <Button
               variant="contained"

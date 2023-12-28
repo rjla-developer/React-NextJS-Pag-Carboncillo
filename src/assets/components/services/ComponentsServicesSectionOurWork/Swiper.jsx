@@ -10,14 +10,24 @@ import { Grid, Box, Button } from "@mui/material";
 
 const Swiper = ({ dataSectionOurWorkSwiper }) => {
   const [itemActive, setItemActive] = useState(2);
+  const [stopCarousel, setStopCarousel] = useState(false);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setItemActive((prevItem) => (prevItem + 1) % dataSectionOurWorkSwiper.length);
-    }, 5000);
+    let intervalId;
+
+    if (!stopCarousel) {
+      intervalId = setInterval(() => {
+        setItemActive((prevItem) => (prevItem + 1) % dataSectionOurWorkSwiper.length);
+      }, 5000);
+    }
 
     return () => clearInterval(intervalId);
-  }, [dataSectionOurWorkSwiper]);
+  }, [stopCarousel, dataSectionOurWorkSwiper]);
+
+  const handleClick = (dataItem) => {
+    setStopCarousel(true);
+    setItemActive(dataItem.id);
+  };
 
   return (
     <Grid
@@ -45,7 +55,7 @@ const Swiper = ({ dataSectionOurWorkSwiper }) => {
               <Button
                 sx={{ color: "rgb(255, 255, 255, .5)" }}
                 key={dataItem.id}
-                onClick={() => setItemActive(dataItem.id)}
+                onClick={() => handleClick(dataItem)}
                 className={`option ${
                   itemActive == dataItem.id ? "active" : null
                 }`}

@@ -6,9 +6,9 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 //Components:
 import Swiper from "./ComponentsServicesSectionOurWork/Swiper";
 
-function ServiceSectionOurWork({dataSectionOurWorkSwiper}) {
+function ServiceSectionOurWork({ dataSectionOurWorkSwiper }) {
   return (
-    <Container sx={{ py: 10 }}>
+    <Container sx={{ pt: { xs: 0, md: 10 },  pb: { xs: 8, md: 10 } }}>
       <Grid
         container
         sx={{
@@ -21,8 +21,8 @@ function ServiceSectionOurWork({dataSectionOurWorkSwiper}) {
               sx={{
                 textTransform: "uppercase",
                 textAlign: "center",
-                fontSize: { xs: 30, lg: 40 },
-                fontWeight: '900'
+                fontSize: { xs: 25, lg: 40 },
+                fontWeight: "900",
               }}
             >
               Proyectos básicos
@@ -31,7 +31,7 @@ function ServiceSectionOurWork({dataSectionOurWorkSwiper}) {
               ¡Da un vistazo a nuestro trabajo!
             </Typography>
 
-            <Swiper dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}/>
+            <Swiper dataSectionOurWorkSwiper={dataSectionOurWorkSwiper} />
           </Box>
         </Grid>
       </Grid>

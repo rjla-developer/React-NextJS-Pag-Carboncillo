@@ -3,7 +3,7 @@ import React from "react";
 //Material UI:
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
-function ServiceSectionWelcome({dataSectionWelcome, onButtonClick }) {
+function ServiceSectionWelcome({ dataSectionWelcome, onButtonClick }) {
   return (
     <Container>
       <Grid container>
@@ -18,26 +18,28 @@ function ServiceSectionWelcome({dataSectionWelcome, onButtonClick }) {
             height: "100vh",
           }}
         >
-          <Box sx={{textAlign: {xs: "center", md: "start"},}}>
+          <Box sx={{ textAlign: { xs: "center", md: "start" } }}>
             <Typography
-            className="font-family-jaapokkisubtract"
+              className="font-family-jaapokkisubtract"
               sx={{
                 color: "white",
-                fontSize: { xs: 40, md: 60},
+                fontSize: { xs: 32, md: 45, lg: 60 },
                 textTransform: "uppercase",
                 mr: { xs: 0, md: 20 },
-                letterSpacing: 8
+                letterSpacing: 8,
               }}
             >
               {dataSectionWelcome.title}
             </Typography>
-            <Typography sx={{ color: "white", mt: 2 }}>
+            <Typography
+              sx={{ color: "white", mt: 2, fontSize: { xs: 15, md: 16 } }}
+            >
               {dataSectionWelcome.description}
             </Typography>
             <Button
               variant="contained"
               sx={{
-                mt: {xs: 4, md: 2},
+                mt: { xs: 3, md: 2 },
                 color: "black",
                 backgroundColor: "#D9D9D9",
                 "&:hover": {

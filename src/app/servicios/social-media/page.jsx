@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import "../../../assets/styles/css/services/socialMedia/service_social_media.css";
 
 //Material UI:
-import { Box, Container} from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 //Components:
 import ServiceSectionWelcome from "@/assets/components/services/ServiceSectionWelcome";
@@ -25,7 +25,14 @@ function Servicio() {
   const containerSectionPackage = useRef(null);
 
   const dataSectionWelcome = {
-    title: "Conecta con tu audiencia",
+    title: (
+      <>
+        <Typography sx={{ color: "#CF9A07" }} variant="span">
+          Conecta{" "}
+        </Typography>{" "}
+        con tu audiencia
+      </>
+    ),
     description:
       "Llega a una comunidad participativa, trabajando en conjunto del contenido orgánico.",
   };
@@ -126,6 +133,15 @@ function Servicio() {
       behavior: "smooth",
       block: "center",
       inline: "center",
+    });
+
+    const currentScrollTop = window.scrollY;
+    const containerTop =
+      containerSectionPackage.current.getBoundingClientRect().top +
+      currentScrollTop;
+    window.scrollTo({
+      top: containerTop - 50,
+      behavior: "smooth",
     });
   };
 

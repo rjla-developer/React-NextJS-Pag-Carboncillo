@@ -86,51 +86,54 @@ function SocialMedia() {
           "(En caso de que la red social de su predilección sea Facebook).",
         messageRestrictions: true,
       },
-    ]
+    ],
   };
 
-  const dataSectionOurWorkSwiper = [
-    {
-      id: 0,
-      image: imgCarousel1,
-      alt: "Post de una canasta de fruta con frutas importadas de México",
-    },
-    {
-      id: 1,
-      image: imgCarousel2,
-      alt: "Post para la festividad de hallowen de una Hamburguesa con apariencia deliciosa y de fondo telaraña",
-    },
-    {
-      id: 2,
-      image: imgCarousel3,
-      alt: "Post de una persona meditando y mariposas cerca de él",
-    },
-    {
-      id: 3,
-      image: imgCarousel4,
-      alt: "Post de una mujer con piel muy bien cuidada",
-    },
-    {
-      id: 4,
-      image: imgCarousel5,
-      alt: "Post de una mujer pensando acerca de los emabarzos",
-    },
-    {
-      id: 5,
-      image: imgCarousel6,
-      alt: "Post de una mujer deportista insitando a que vengan a entrenar con ella",
-    },
-    {
-      id: 6,
-      image: imgCarousel7,
-      alt: "Post de una pizza con fuego y un mensaje que dice 'La mejor pizza de la ciudad",
-    },
-    {
-      id: 7,
-      image: imgCarousel8,
-      alt: "Post de una persona sosteniendo unos lentes y un mensaje que dice 'Lentes con protección uv en $35",
-    },
-  ];
+  const dataSectionOurWork = {
+    title: "PROYECTOS BÁSICOS",
+    dataSwiper: [
+      {
+        id: 0,
+        image: imgCarousel1,
+        alt: "Post de una canasta de fruta con frutas importadas de México",
+      },
+      {
+        id: 1,
+        image: imgCarousel2,
+        alt: "Post para la festividad de hallowen de una Hamburguesa con apariencia deliciosa y de fondo telaraña",
+      },
+      {
+        id: 2,
+        image: imgCarousel3,
+        alt: "Post de una persona meditando y mariposas cerca de él",
+      },
+      {
+        id: 3,
+        image: imgCarousel4,
+        alt: "Post de una mujer con piel muy bien cuidada",
+      },
+      {
+        id: 4,
+        image: imgCarousel5,
+        alt: "Post de una mujer pensando acerca de los emabarzos",
+      },
+      {
+        id: 5,
+        image: imgCarousel6,
+        alt: "Post de una mujer deportista insitando a que vengan a entrenar con ella",
+      },
+      {
+        id: 6,
+        image: imgCarousel7,
+        alt: "Post de una pizza con fuego y un mensaje que dice 'La mejor pizza de la ciudad",
+      },
+      {
+        id: 7,
+        image: imgCarousel8,
+        alt: "Post de una persona sosteniendo unos lentes y un mensaje que dice 'Lentes con protección uv en $35",
+      },
+    ],
+  };
 
   const handleButtonClick = () => {
     containerSectionPackage.current.scrollIntoView({
@@ -160,9 +163,7 @@ function SocialMedia() {
         <ServiceSectionPackage dataSectionPackage={dataSectionPackage} />
       </Box>
 
-      <ServiceSectionOurWork
-        dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}
-      />
+      <ServiceSectionOurWork dataSectionOurWork={dataSectionOurWork} />
     </Container>
   );
 }

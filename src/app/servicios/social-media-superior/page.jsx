@@ -26,86 +26,91 @@ function SocialMediaSuperior() {
 
   const dataSectionWelcome = {
     title: "A la altura de tus expectativas",
-    description:
-      "Un servicio con los más altos estándares de calidad.",
+    description: "Un servicio con los más altos estándares de calidad.",
   };
 
   const dataSectionPackage = {
     title: "Social media superior",
     colorCard: "#029769",
     dataPackage: [
-    {
-      id: 1,
-      "title": "Silver $2,499 MXN",
-      "description": null,
-      "include": [
-        "1 community manager asignado.",
-        "1 propuesta de campaña.",
-        "4 post por semana.",
-        "1 red social.",
-        "Respuestas predeterminadas."
-      ],
-      "restrictions": "(En caso de que la red social de su predilección sea Facebook).",
-      "messageRestrictions": true
-    },
-    {
-      id:2,
-      "title": "Gold $3,299 MXN",
-      "description": null,
-      "include": [
-        "1 community manager asignado.",
-        "1 propuesta de campaña.",
-        "4 post por semana.",
-        "2 redes sociales.",
-        "Respuestas predeterminadas."
-      ],
-      "restrictions": "(En caso de que la red social de su predilección sea Facebook).",
-      "messageRestrictions": true
-    }
-  ]};
+      {
+        id: 1,
+        title: "Silver $2,499 MXN",
+        description: null,
+        include: [
+          "1 community manager asignado.",
+          "1 propuesta de campaña.",
+          "4 post por semana.",
+          "1 red social.",
+          "Respuestas predeterminadas.",
+        ],
+        restrictions:
+          "(En caso de que la red social de su predilección sea Facebook).",
+        messageRestrictions: true,
+      },
+      {
+        id: 2,
+        title: "Gold $3,299 MXN",
+        description: null,
+        include: [
+          "1 community manager asignado.",
+          "1 propuesta de campaña.",
+          "4 post por semana.",
+          "2 redes sociales.",
+          "Respuestas predeterminadas.",
+        ],
+        restrictions:
+          "(En caso de que la red social de su predilección sea Facebook).",
+        messageRestrictions: true,
+      },
+    ],
+  };
 
-  const dataSectionOurWorkSwiper = [
-    {
-      id: 0,
-      image: imgCarousel1,
-      alt: "",
-    },
-    {
-      id: 1,
-      image: imgCarousel2,
-      alt: "",
-    },
-    {
-      id: 2,
-      image: imgCarousel3,
-      alt: "",
-    },
-    {
-      id: 3,
-      image: imgCarousel4,
-      alt: "",
-    },
-    {
-      id: 4,
-      image: imgCarousel5,
-      alt: "",
-    },
-    {
-      id: 5,
-      image: imgCarousel6,
-      alt: "",
-    },
-    {
-      id: 6,
-      image: imgCarousel7,
-      alt: "",
-    },
-    {
-      id: 7,
-      image: imgCarousel8,
-      alt: "",
-    },
-  ];
+  const dataSectionOurWork = {
+    title: "PROYECTOS SUPERIORES",
+    dataSwiper: [
+      {
+        id: 0,
+        image: imgCarousel1,
+        alt: "",
+      },
+      {
+        id: 1,
+        image: imgCarousel2,
+        alt: "",
+      },
+      {
+        id: 2,
+        image: imgCarousel3,
+        alt: "",
+      },
+      {
+        id: 3,
+        image: imgCarousel4,
+        alt: "",
+      },
+      {
+        id: 4,
+        image: imgCarousel5,
+        alt: "",
+      },
+      {
+        id: 5,
+        image: imgCarousel6,
+        alt: "",
+      },
+      {
+        id: 6,
+        image: imgCarousel7,
+        alt: "",
+      },
+      {
+        id: 7,
+        image: imgCarousel8,
+        alt: "",
+      },
+    ],
+  };
 
   const handleButtonClick = () => {
     containerSectionPackage.current.scrollIntoView({
@@ -125,7 +130,10 @@ function SocialMediaSuperior() {
   };
 
   return (
-    <Container maxWidth={false} className="container-service-social-media-superior">
+    <Container
+      maxWidth={false}
+      className="container-service-social-media-superior"
+    >
       <ServiceSectionWelcome
         dataSectionWelcome={dataSectionWelcome}
         onButtonClick={handleButtonClick}
@@ -135,9 +143,7 @@ function SocialMediaSuperior() {
         <ServiceSectionPackage dataSectionPackage={dataSectionPackage} />
       </Box>
 
-      <ServiceSectionOurWork
-        dataSectionOurWorkSwiper={dataSectionOurWorkSwiper}
-      />
+      <ServiceSectionOurWork dataSectionOurWork={dataSectionOurWork} />
     </Container>
   );
 }

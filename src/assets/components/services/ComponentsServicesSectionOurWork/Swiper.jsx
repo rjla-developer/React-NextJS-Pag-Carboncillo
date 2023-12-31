@@ -8,7 +8,7 @@ import Image from "next/image";
 //Material UI:
 import { Grid, Box, Button } from "@mui/material";
 
-const Swiper = ({ dataSectionOurWorkSwiper }) => {
+const Swiper = ({ dataSectionOurWork }) => {
   const [itemActive, setItemActive] = useState(2);
   const [stopCarousel, setStopCarousel] = useState(false);
 
@@ -17,12 +17,12 @@ const Swiper = ({ dataSectionOurWorkSwiper }) => {
 
     if (!stopCarousel) {
       intervalId = setInterval(() => {
-        setItemActive((prevItem) => (prevItem + 1) % dataSectionOurWorkSwiper.length);
+        setItemActive((prevItem) => (prevItem + 1) % dataSectionOurWork.length);
       }, 5000);
     }
 
     return () => clearInterval(intervalId);
-  }, [stopCarousel, dataSectionOurWorkSwiper]);
+  }, [stopCarousel, dataSectionOurWork]);
 
   const handleClick = (dataItem) => {
     setStopCarousel(true);
@@ -50,7 +50,7 @@ const Swiper = ({ dataSectionOurWorkSwiper }) => {
             justifyItems: "center",
           }}
         >
-          {dataSectionOurWorkSwiper.map((dataItem) => {
+          {dataSectionOurWork.map((dataItem) => {
             return (
               <Button
                 sx={{ color: "rgb(255, 255, 255, .5)" }}

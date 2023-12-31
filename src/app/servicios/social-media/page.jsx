@@ -21,7 +21,7 @@ import imgCarousel6 from "../../../assets/images/services/socialMedia/carousel/6
 import imgCarousel7 from "../../../assets/images/services/socialMedia/carousel/7.png";
 import imgCarousel8 from "../../../assets/images/services/socialMedia/carousel/8.png";
 
-function Servicio() {
+function SocialMedia() {
   const containerSectionPackage = useRef(null);
 
   const dataSectionWelcome = {
@@ -37,53 +37,57 @@ function Servicio() {
       "Llega a una comunidad participativa, trabajando en conjunto del contenido orgánico.",
   };
 
-  const dataSectionPackage = [
-    {
-      id: 1,
-      title: "Elemental $1,499 MXN",
-      description: null,
-      include: [
-        "1 community manager asignado.",
-        "1 propuesta de campaña.",
-        "5 post por semana.",
-        "1 red social.",
-        "Respuestas predeterminadas.",
-      ],
-      restrictions:
-        "(En caso de que la red social de su predilección sea Facebook).",
-      messageRestrictions: true,
-    },
-    {
-      id: 2,
-      title: "Estándar $1,999 MXN",
-      description: null,
-      include: [
-        "1 community manager asignado.",
-        "1 propuesta de campaña.",
-        "5 post por semana.",
-        "2 redes sociales.",
-        "Respuestas predeterminadas.",
-      ],
-      restrictions:
-        "(En caso de que la red social de su predilección sea Facebook).",
-      messageRestrictions: true,
-    },
-    {
-      id: 3,
-      title: "Completo $2,499 MXN",
-      description: null,
-      include: [
-        "1 community manager asignado.",
-        "2 propuestas de campaña.",
-        "5 post por semana.",
-        "4 redes sociales.",
-        "Respuestas predeterminadas.",
-      ],
-      restrictions:
-        "(En caso de que la red social de su predilección sea Facebook).",
-      messageRestrictions: true,
-    },
-  ];
+  const dataSectionPackage = {
+    title: "Planes básicos",
+    colorCard: "rgb(207, 154, 7)",
+    dataPackage: [
+      {
+        id: 1,
+        title: "Elemental $1,499 MXN",
+        description: null,
+        include: [
+          "1 community manager asignado.",
+          "1 propuesta de campaña.",
+          "5 post por semana.",
+          "1 red social.",
+          "Respuestas predeterminadas.",
+        ],
+        restrictions:
+          "(En caso de que la red social de su predilección sea Facebook).",
+        messageRestrictions: true,
+      },
+      {
+        id: 2,
+        title: "Estándar $1,999 MXN",
+        description: null,
+        include: [
+          "1 community manager asignado.",
+          "1 propuesta de campaña.",
+          "5 post por semana.",
+          "2 redes sociales.",
+          "Respuestas predeterminadas.",
+        ],
+        restrictions:
+          "(En caso de que la red social de su predilección sea Facebook).",
+        messageRestrictions: true,
+      },
+      {
+        id: 3,
+        title: "Completo $2,499 MXN",
+        description: null,
+        include: [
+          "1 community manager asignado.",
+          "2 propuestas de campaña.",
+          "5 post por semana.",
+          "4 redes sociales.",
+          "Respuestas predeterminadas.",
+        ],
+        restrictions:
+          "(En caso de que la red social de su predilección sea Facebook).",
+        messageRestrictions: true,
+      },
+    ]
+  };
 
   const dataSectionOurWorkSwiper = [
     {
@@ -163,4 +167,4 @@ function Servicio() {
   );
 }
 
-export default Servicio;
+export default SocialMedia;

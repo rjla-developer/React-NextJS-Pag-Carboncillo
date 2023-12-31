@@ -1,0 +1,13 @@
+.container-service-social-media-superior {
+  background-image: url("../../../../images/services/socialMediaSuperior/background/background-social-media-superior.webp");
+  background-size: "cover";
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (min-width: 900px) {
+  .container-service-social-media-superior {
+    background-position: left center;
+  }
+}
+
+/*# sourceMappingURL=service_social_media_superior.css.map */

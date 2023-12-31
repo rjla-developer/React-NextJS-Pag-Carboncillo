@@ -18,7 +18,7 @@ function ServiceSectionPackage({ dataSectionPackage }) {
                 fontWeight: "900",
               }}
             >
-              Planes básicos
+              {dataSectionPackage.title}
             </Typography>
             <Typography sx={{ textAlign: "center", mt: 2 }}>
               Tenemos para ti una gran variedad de soluciones profesionales,
@@ -37,8 +37,14 @@ function ServiceSectionPackage({ dataSectionPackage }) {
               justifyContent: "center",
             }}
           >
-            {dataSectionPackage.map((dataItem) => {
-              return <CardPackage key={dataItem.id} dataItem={dataItem} />;
+            {dataSectionPackage.dataPackage.map((dataItem) => {
+              return (
+                <CardPackage
+                  key={dataItem.id}
+                  dataItem={dataItem}
+                  colorCard={dataSectionPackage.colorCard}
+                />
+              );
             })}
           </Grid>
         </Grid>

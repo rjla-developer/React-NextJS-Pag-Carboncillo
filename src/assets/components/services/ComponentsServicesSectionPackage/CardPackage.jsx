@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 
-function CardPackage({dataItem}) {
+function CardPackage({dataItem, colorCard}) {
   return (
     <Grid item xs={12} md={3.5}>
       <Box
@@ -23,7 +23,7 @@ function CardPackage({dataItem}) {
           mb:{xs: 6, md: 0}
         }}
       >
-        <Typography sx={{ fontSize: 20, color: "rgb(207, 154, 7)" }}>
+        <Typography sx={{ fontSize: 20, color: colorCard }}>
           {dataItem.title}
         </Typography>
         <Typography sx={{ mt: 3 }}>Plan mensual incluye:</Typography>
@@ -47,11 +47,12 @@ function CardPackage({dataItem}) {
         <Button
           sx={{
             color: "black",
-            backgroundColor: "rgb(207, 154, 7, 0.85)",
+            backgroundColor: colorCard,
+            opacity: '85%',
             mt: 2,
             px: 4,
             borderRadius: 25,
-            "&:hover": { backgroundColor: "rgb(207, 154, 7)" },
+            "&:hover": { backgroundColor: colorCard, opacity: '100%' },
           }}
         >
           Contratar

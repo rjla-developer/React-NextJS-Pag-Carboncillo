@@ -12,13 +12,12 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "../../../assets/images/services/brandDesign/carousel/1.jpg";
-import imgCarousel2 from "../../../assets/images/services/brandDesign/carousel/2.jpg";
-import imgCarousel3 from "../../../assets/images/services/brandDesign/carousel/3.jpg";
-import imgCarousel4 from "../../../assets/images/services/brandDesign/carousel/4.jpg";
-import imgCarousel5 from "../../../assets/images/services/brandDesign/carousel/5.jpg";
-import imgCarousel6 from "../../../assets/images/services/brandDesign/carousel/6.jpg";
-import imgCarousel7 from "../../../assets/images/services/brandDesign/carousel/7.jpg";
+import imgCarousel1 from "../../../assets/images/services/websites/carousel/1.png";
+import imgCarousel2 from "../../../assets/images/services/websites/carousel/2.png";
+import imgCarousel3 from "../../../assets/images/services/websites/carousel/3.webp";
+import imgCarousel4 from "../../../assets/images/services/websites/carousel/4.png";
+import imgCarousel5 from "../../../assets/images/services/websites/carousel/5.webp";
+import imgCarousel6 from "../../../assets/images/services/websites/carousel/6.png";
 
 function Website() {
   const containerSectionPackage = useRef(null);
@@ -113,11 +112,6 @@ function Website() {
       {
         id: 5,
         image: imgCarousel6,
-        alt: "",
-      },
-      {
-        id: 6,
-        image: imgCarousel7,
         alt: "",
       },
     ],

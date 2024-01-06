@@ -13,7 +13,7 @@ function HomeSectionOrigin() {
   return (
     <Container className="container-origin" maxWidth={"false"}>
       <Container>
-        <Grid container sx={{ height: "100vh" }}>
+        <Grid container sx={{py: {xs: 10, md: 20}}}>
           <Grid
             item
             xs={12}

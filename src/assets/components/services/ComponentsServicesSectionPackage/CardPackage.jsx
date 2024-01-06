@@ -13,7 +13,7 @@ import {
 
 function CardPackage({dataItem, colorCard}) {
   return (
-    <Grid item xs={12} md={3.5} sx={{mb: 2}}>
+    <Grid item xs={12} md={2.9} sx={{mb: 2}}>
       <Box
         sx={{
           p: 2,

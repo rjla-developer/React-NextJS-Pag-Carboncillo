@@ -6,7 +6,7 @@ import CardPackage from "./ComponentsServicesSectionPackage/CardPackage";
 
 function ServiceSectionPackage({ dataSectionPackage }) {
   return (
-    <Container sx={{ color: "white", py: 5 }}>
+    <Container sx={{ color: "white", py: 5 }} maxWidth={false}>
       <Grid container>
         <Grid item xs={12}>
           <Box>
@@ -29,7 +29,7 @@ function ServiceSectionPackage({ dataSectionPackage }) {
         <Grid item xs={12}>
           <Grid
             container
-            columnGap={3}
+            columnGap={1.5}
             sx={{
               mt: 5,
               display: "flex",

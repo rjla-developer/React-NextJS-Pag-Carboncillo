@@ -23,7 +23,7 @@ function ServiceSectionWelcome({ dataSectionWelcome, onButtonClick }) {
               className="font-family-jaapokkisubtract"
               sx={{
                 color: "white",
-                fontSize: { xs: 32, md: 45, lg: 60 },
+                fontSize: { xs: 26, md: 45, lg: 60 },
                 textTransform: "uppercase",
                 mr: { xs: 0, md: 20 },
                 letterSpacing: 8,
@@ -32,7 +32,7 @@ function ServiceSectionWelcome({ dataSectionWelcome, onButtonClick }) {
               {dataSectionWelcome.title}
             </Typography>
             <Typography
-              sx={{ color: "white", mt: 2, fontSize: { xs: 15, md: 16 } }}
+              sx={{ color: "white", mt: 2, fontSize: 16 }}
             >
               {dataSectionWelcome.description}
             </Typography>

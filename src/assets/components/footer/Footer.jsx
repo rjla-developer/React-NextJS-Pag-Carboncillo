@@ -17,7 +17,7 @@ function Footer() {
           <Box>
             <Typography
               textAlign={"center"}
-              sx={{ color: "#FF3131", fontSize: 25 }}
+              sx={{ color: "#56BDCA", fontSize: 25 }}
             >
               Info
             </Typography>
@@ -32,7 +32,7 @@ function Footer() {
           <Box>
             <Typography
               textAlign={"center"}
-              sx={{ color: "#FF3131", fontSize: 25 }}
+              sx={{ color: "#56BDCA", fontSize: 25 }}
             >
               Ayuda
             </Typography>
@@ -45,7 +45,7 @@ function Footer() {
           <Box>
             <Typography
               textAlign={"center"}
-              sx={{ color: "#FF3131", fontSize: 25 }}
+              sx={{ color: "#56BDCA", fontSize: 25 }}
             >
               Links rápidos
             </Typography>
@@ -59,7 +59,7 @@ function Footer() {
         <Grid item mt={3} xs={12} md={3}>
           <Box>
             <Typography
-              sx={{ color: "#FF3131", fontSize: 25, textAlign: "center" }}
+              sx={{ color: "#56BDCA", fontSize: 25, textAlign: "center" }}
             >
               Redes sociales
             </Typography>

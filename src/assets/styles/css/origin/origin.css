@@ -1,8 +1,13 @@
-/* .container-origin {
-  background-image: url("../../../images/origin/nubes-blancas-tornado.jpg");
+.container-origin {
+  background-image: url("../../../images/origin/background-filosofia.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-} */
+  background-position: right center;
+}
+@media (min-width: 900px) {
+  .container-origin {
+    background-position: left center;
+  }
+}
 
 /*# sourceMappingURL=origin.css.map */

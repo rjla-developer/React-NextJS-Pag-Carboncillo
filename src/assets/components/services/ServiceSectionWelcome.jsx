@@ -10,7 +10,7 @@ function ServiceSectionWelcome({ dataSectionWelcome, onButtonClick }) {
         <Grid
           item
           xs={12}
-          md={9}
+          md={10}
           sx={{
             display: "flex",
             alignItems: "center",

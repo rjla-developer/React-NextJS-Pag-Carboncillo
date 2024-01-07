@@ -36,7 +36,7 @@ function Website() {
 
   const dataSectionPackage = {
     title: "PLANES WEB",
-    colorCard: "#B45201",
+    colorCard: "#903B0B",
     dataPackage: [
       {
         title: "Landing Page $4,999 MXN",

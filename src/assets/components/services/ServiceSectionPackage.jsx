@@ -40,7 +40,7 @@ function ServiceSectionPackage({ dataSectionPackage }) {
             {dataSectionPackage.dataPackage.map((dataItem) => {
               return (
                 <CardPackage
-                  key={dataItem.id}
+                  key={dataItem.title}
                   dataItem={dataItem}
                   colorCard={dataSectionPackage.colorCard}
                 />

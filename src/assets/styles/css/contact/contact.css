@@ -1,11 +1,11 @@
-.container-origin {
+.container-contact {
   background-image: url("../../../images/contact/background-contacto.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
 }
 @media (min-width: 900px) {
-  .container-origin {
+  .container-contact {
     background-position: left center;
   }
 }

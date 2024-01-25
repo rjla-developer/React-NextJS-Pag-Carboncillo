@@ -45,7 +45,7 @@ function Contacto() {
   };
 
   return (
-    <Container maxWidth={false} className="container-origin" sx={{ pb: 8 }}>
+    <Container maxWidth={false} className="container-contact" sx={{ pb: 8 }}>
       <ServiceSectionWelcome
         dataSectionWelcome={dataSectionWelcome}
         onButtonClick={handleButtonClick}

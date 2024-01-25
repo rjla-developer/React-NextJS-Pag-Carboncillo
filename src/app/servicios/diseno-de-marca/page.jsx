@@ -12,13 +12,17 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "../../../assets/images/services/brandDesign/carousel/1.jpg";
-import imgCarousel2 from "../../../assets/images/services/brandDesign/carousel/2.jpg";
-import imgCarousel3 from "../../../assets/images/services/brandDesign/carousel/3.jpg";
-import imgCarousel4 from "../../../assets/images/services/brandDesign/carousel/4.jpg";
-import imgCarousel5 from "../../../assets/images/services/brandDesign/carousel/5.jpg";
-import imgCarousel6 from "../../../assets/images/services/brandDesign/carousel/6.jpg";
-import imgCarousel7 from "../../../assets/images/services/brandDesign/carousel/7.jpg";
+import imgCarousel1 from "../../../assets/images/services/brandDesign/carousel/1.png";
+import imgCarousel2 from "../../../assets/images/services/brandDesign/carousel/2.png";
+import imgCarousel3 from "../../../assets/images/services/brandDesign/carousel/3.png";
+import imgCarousel4 from "../../../assets/images/services/brandDesign/carousel/4.png";
+import imgCarousel5 from "../../../assets/images/services/brandDesign/carousel/5.png";
+import imgCarousel6 from "../../../assets/images/services/brandDesign/carousel/6.png";
+import imgCarousel7 from "../../../assets/images/services/brandDesign/carousel/7.png";
+import imgCarousel8 from "../../../assets/images/services/brandDesign/carousel/8.png";
+import imgCarousel9 from "../../../assets/images/services/brandDesign/carousel/9.png";
+import imgCarousel10 from "../../../assets/images/services/brandDesign/carousel/10.png";
+import imgCarousel11 from "../../../assets/images/services/brandDesign/carousel/11.png";
 
 function BrandDesign() {
   const containerSectionPackage = useRef(null);
@@ -90,6 +94,26 @@ function BrandDesign() {
       {
         id: 6,
         image: imgCarousel7,
+        alt: "",
+      },
+      {
+        id: 7,
+        image: imgCarousel8,
+        alt: "",
+      },
+      {
+        id: 8,
+        image: imgCarousel9,
+        alt: "",
+      },
+      {
+        id: 9,
+        image: imgCarousel10,
+        alt: "",
+      },
+      {
+        id: 10,
+        image: imgCarousel11,
         alt: "",
       },
     ],

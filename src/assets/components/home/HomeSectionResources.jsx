@@ -3,6 +3,9 @@ import React from "react";
 //Material UI:
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
+//NextJS:
+import Link from "next/link";
+
 function HomeSectionResources() {
   const dataItemServices = [
     {
@@ -11,6 +14,7 @@ function HomeSectionResources() {
       descService:
         "Establece vínculos emocionales con tus clientes, adéntrate al nuevo mundo de la publicidad digital y mejora tu presencia de marca en la web.",
       backgroundColorItem: "background-yellow",
+      link: "social-media",
     },
     {
       id: "social-media-superior",
@@ -18,6 +22,7 @@ function HomeSectionResources() {
       descService:
         "Si lo tuyo es una experiencia totalmente personalizada, este plan es perfecto para ti, genera experiencias únicas en tu audiencia.",
       backgroundColorItem: "background-green",
+      link: "social-media-superior",
     },
     {
       id: "diseno-de-marca",
@@ -25,6 +30,7 @@ function HomeSectionResources() {
       descService:
         "Dale una identidad definida y personalizada a tu marca, distingue y destaca tus cualidades empresariales por encima de la competencia.",
       backgroundColorItem: "background-purple",
+      link: "diseno-de-marca",
     },
     {
       id: "sitios-web",
@@ -32,6 +38,7 @@ function HomeSectionResources() {
       descService:
         "Construye tu espacio digital en internet y haz conocer tu marca con el mundo.",
       backgroundColorItem: "background-orange",
+      link: "sitios-web",
     },
     {
       id: "campanas-google",
@@ -39,6 +46,7 @@ function HomeSectionResources() {
       descService:
         "Es hora de llevar tu negocio al siguiente nivel, conecta con tu audiencia mediante diversos tipos de publicidad en el buscador más utilizado.",
       backgroundColorItem: "background-blue",
+      link: "campanas",
     },
     {
       id: "campanas-facebook",
@@ -46,6 +54,7 @@ function HomeSectionResources() {
       descService:
         "Un grupo de profesionales listos para ayudarte a conectar con tu audiencia.",
       backgroundColorItem: "background-rose",
+      link: "campanas",
     },
   ];
   return (
@@ -69,7 +78,7 @@ function HomeSectionResources() {
               color: "white",
               textAlign: "center",
               fontSize: { xs: 30, md: 50 },
-              letterSpacing: 8
+              letterSpacing: 8,
             }}
           >
             Recursos
@@ -116,17 +125,19 @@ function HomeSectionResources() {
                     mt: 4,
                   }}
                 >
-                  <Button
-                    variant="contained"
-                    sx={{
-                      backgroundColor: "black",
-                      "&:hover": {
+                  <Link href={`/servicios/${item.link}`}>
+                    <Button
+                      variant="contained"
+                      sx={{
                         backgroundColor: "black",
-                      },
-                    }}
-                  >
-                    Conoce más
-                  </Button>
+                        "&:hover": {
+                          backgroundColor: "black",
+                        },
+                      }}
+                    >
+                      Conoce más
+                    </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>

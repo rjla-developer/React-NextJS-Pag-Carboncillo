@@ -1,0 +1,48 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contacto",
+        "destination": "/contacto.html"
+      },
+      {
+        "source": "/origen",
+        "destination": "/origen.html"
+      },
+      {
+        "source": "/servicios/diseno-de-marca",
+        "destination": "/servicios/diseno-de-marca.html"
+      },
+      {
+        "source": "/servicios/extra",
+        "destination": "/servicios/extra.html"
+      },
+      {
+        "source": "/servicios/sitios-web",
+        "destination": "/servicios/sitios-web.html"
+      },
+      {
+        "source": "/servicios/social-media",
+        "destination": "/servicios/social-media.html"
+      },
+      {
+        "source": "/servicios/social-media-superior",
+        "destination": "/servicios/social-media-superior.html"
+      },
+      {
+        "source": "/servicios/campanas",
+        "destination": "/servicios/campanas.html"
+      }
+    ]
+  }
+}

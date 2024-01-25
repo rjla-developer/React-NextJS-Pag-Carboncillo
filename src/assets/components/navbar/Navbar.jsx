@@ -68,7 +68,7 @@ function Navbar(props) {
     { title: "Origen", Link: "/origen" },
     { title: "Servicios", button: handleMouseEnter },
     { title: "Contácto", Link: "/contacto" },
-    { title: "Carrito", Link: "/carrito" },
+    /* { title: "Carrito", Link: "/carrito" }, */
   ];
 
   const pagesServices = [
@@ -76,37 +76,37 @@ function Navbar(props) {
       Link: "/servicios/social-media",
       icon: <BiLike />,
       title: "Social media",
-      styleName: "social-media"
+      styleName: "social-media",
     },
     {
       Link: "/servicios/social-media-superior",
       icon: <TbFileLike />,
       title: "Social media superior",
-      styleName: "social-media-superior"
+      styleName: "social-media-superior",
     },
     {
       Link: "/servicios/campanas",
       icon: <MdOutlineCampaign />,
       title: "Campañas",
-      styleName: "campaigns"
+      styleName: "campaigns",
     },
     {
       Link: "/servicios/diseno-de-marca",
       icon: <SiStylelint />,
       title: "Diseño de marca",
-      styleName: "brand-design"
+      styleName: "brand-design",
     },
     {
       Link: "/servicios/sitios-web",
       icon: <MdWeb />,
       title: "Sitios web",
-      styleName: "websites"
+      styleName: "websites",
     },
     {
       Link: "/servicios/extra",
       icon: <LuPackagePlus />,
       title: "Extra",
-      styleName: "extra"
+      styleName: "extra",
     },
   ];
 
@@ -363,7 +363,7 @@ function Navbar(props) {
           onMouseLeave={handleMouseLeave}
         >
           <Grid container spacing={2}>
-            <Grid item xs={12} sx={{mb: 1}}>
+            <Grid item xs={12} sx={{ mb: 1 }}>
               <Typography variant="h5">Servicios</Typography>
             </Grid>
             {pagesServices.map((servicio) => (

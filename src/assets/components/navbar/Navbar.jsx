@@ -55,18 +55,18 @@ function Navbar(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const handleMouseEnter = () => {
-    setShowParagraph(true);
+  const handleShowOrCloseSubMenu = () => {
+    setShowParagraph(!showParagraph);
   };
 
-  const handleMouseLeave = () => {
+  const handleCloseSubMenu = () => {
     setShowParagraph(false);
   };
 
   const pages = [
     { title: "Inicio", Link: "/" },
     { title: "Origen", Link: "/origen" },
-    { title: "Servicios", button: handleMouseEnter },
+    { title: "Servicios", button: handleShowOrCloseSubMenu },
     { title: "Contácto", Link: "/contacto" },
     /* { title: "Carrito", Link: "/carrito" }, */
   ];
@@ -194,7 +194,7 @@ function Navbar(props) {
 
   const IconBtn = ({ styleName, iconId, label }) => {
     return (
-      <Box className="container-item-submenu" onClick={handleMouseLeave}>
+      <Box className="container-item-submenu" onClick={handleCloseSubMenu}>
         <Button className={`icon-btn icon-btn--${styleName}`} type="button">
           <Box className="icon-btn__back"></Box>
           <Box className="icon-btn__front">
@@ -301,8 +301,8 @@ function Navbar(props) {
                         itemSected == page.title ? "opcNavbar-active" : null
                       } `}
                       aria-haspopup="true"
-                      onMouseEnter={page.button}
-                      /* onClick={() => handleMouseEnter()} */
+                      /* onMouseEnter={page.button} */
+                      onClick={() => handleShowOrCloseSubMenu()}
                       sx={{
                         my: 2,
                         color: "white",
@@ -359,8 +359,8 @@ function Navbar(props) {
       {showParagraph ? (
         <Box
           className="menuServices"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          /* onMouseEnter={handleShowOrCloseSubMenu} */
+          /* onMouseLeave={handleCloseSubMenu} */
         >
           <Grid container spacing={2}>
             <Grid item xs={12} sx={{ mb: 1 }}>

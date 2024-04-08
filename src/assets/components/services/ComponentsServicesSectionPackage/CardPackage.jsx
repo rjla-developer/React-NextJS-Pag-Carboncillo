@@ -12,15 +12,29 @@ import {
 } from "@mui/material";
 
 function CardPackage({dataItem, colorCard}) {
+  function hexToRgbA(hex, alpha){
+    let c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length=== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+alpha+')';
+    }
+    throw new Error('Bad Hex');
+}
   return (
     <Grid item xs={12} md={2.9} sx={{mb: 2}}>
       <Box
         sx={{
           p: 2,
           textAlign: "center",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          border: `1px solid ${hexToRgbA(colorCard, 0.4)}`,
+          boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)",
           borderRadius: 10,
-          mb:{xs: 6, md: 0}
+          mb:{xs: 2, md: 0}
         }}
       >
         <Typography sx={{ fontSize: 20, color: colorCard }}>

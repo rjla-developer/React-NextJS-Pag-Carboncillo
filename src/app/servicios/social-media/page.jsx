@@ -39,7 +39,7 @@ function SocialMedia() {
 
   const dataSectionPackage = {
     title: "Planes básicos",
-    colorCard: "rgb(207, 154, 7)",
+    colorCard: "#CF9A07",
     dataPackage: [
       {
         id: 1,

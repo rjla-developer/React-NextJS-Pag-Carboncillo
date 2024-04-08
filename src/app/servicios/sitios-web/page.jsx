@@ -26,7 +26,7 @@ function Website() {
     title: (
       <>
         WEBSITE SÓLIDOS A LA{" "}
-        <Typography sx={{ color: "#903B0B" }} variant="span">
+        <Typography sx={{ color: "#c89d85" }} variant="span">
         MEDIDA
         </Typography>{" "}
       </>
@@ -36,7 +36,7 @@ function Website() {
 
   const dataSectionPackage = {
     title: "PLANES WEB",
-    colorCard: "#903B0B",
+    colorCard: "#c89d85",
     dataPackage: [
       {
         title: "Landing Page $4,999 MXN",

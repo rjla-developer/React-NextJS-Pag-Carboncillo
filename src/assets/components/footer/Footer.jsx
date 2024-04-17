@@ -19,7 +19,7 @@ function Footer() {
               textAlign={"center"}
               sx={{ color: "#56BDCA", fontSize: 25 }}
             >
-              Info
+              Información
             </Typography>
             <Typography textAlign={"center"}>¿Quiénes somos?</Typography>
             <Typography textAlign={"center"}>Clientes</Typography>
@@ -61,7 +61,7 @@ function Footer() {
             <Typography
               sx={{ color: "#56BDCA", fontSize: 25, textAlign: "center" }}
             >
-              Redes sociales
+              Redes Sociales
             </Typography>
             <Box
               fontSize={25}

@@ -31,6 +31,7 @@ import { LuPackagePlus } from "react-icons/lu";
 import { MdOutlineCampaign } from "react-icons/md";
 import { BiLike } from "react-icons/bi";
 import { TbFileLike } from "react-icons/tb";
+import { PiPenNibFill } from "react-icons/pi";
 
 //CSS:
 import "../../styles/css/navbar/navbar.css";
@@ -92,7 +93,7 @@ function Navbar(props) {
     },
     {
       Link: "/servicios/diseno-de-marca",
-      icon: <SiStylelint />,
+      icon: <PiPenNibFill />,
       title: "Diseño de marca",
       styleName: "brand-design",
     },

@@ -102,7 +102,7 @@ function HomeSectionResources() {
                 backgroundColor: "#292828",
                 borderRadius: "20px",
                 color: "white",
-                padding: 5,
+                padding: 4,
                 height: "250px",
                 display: "flex",
                 justifyContent: "center",

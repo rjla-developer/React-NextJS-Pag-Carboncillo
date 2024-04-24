@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import "../../../assets/styles/css/services/websites/websites.css";
 
 //Material UI:
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 //Components:
 import ServiceSectionWelcome from "@/assets/components/services/ServiceSectionWelcome";
@@ -145,7 +145,29 @@ function Website() {
         <ServiceSectionPackage dataSectionPackage={dataSectionPackage} />
       </Box>
 
-      <ServiceSectionOurWork dataSectionOurWork={dataSectionOurWork} />
+      {/* <ServiceSectionOurWork dataSectionOurWork={dataSectionOurWork} /> */}
+      <Container sx={{ pt: { xs: 0, md: 10 }, pb: { xs: 8, md: 10 } }}>
+            <Grid container sx={{ color: "white" }}>
+                <Grid item xs={12}>
+                    <Box>
+                        <Typography
+                            sx={{
+                                textTransform: "uppercase",
+                                textAlign: "center",
+                                fontSize: { xs: 25, lg: 40 },
+                                fontWeight: "900",
+                            }}
+                        >
+                            {dataSectionOurWork.title}
+                        </Typography>
+                        <Typography sx={{ textAlign: "center", mt: 2 }}>
+                            ¡Da un vistazo a nuestro trabajo!
+                        </Typography>
+
+                    </Box>
+                </Grid>
+            </Grid>
+        </Container>
     </Container>
   );
 }

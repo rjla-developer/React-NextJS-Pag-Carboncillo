@@ -69,6 +69,7 @@ function Navbar(props) {
     { title: "Origen", Link: "/origen" },
     { title: "Servicios", button: handleShowOrCloseSubMenu },
     { title: "Contácto", Link: "/contacto" },
+    { title: "Carrito", Link: "/carrito"}
     /* { title: "Carrito", Link: "/carrito" }, */
   ];
 
@@ -325,7 +326,10 @@ function Navbar(props) {
                           itemSected == page.title ? "opcNavbar-active" : null
                         } `}
                         sx={{
+                          border: page?.title == "Carrito" ?  "1px solid #5B949C" : null,
+                          px: page?.title == "Carrito" ?  3 : null,
                           my: 2,
+                          mr: 1,
                           color: "white",
                           display: "block",
                           textTransform: "uppercase",

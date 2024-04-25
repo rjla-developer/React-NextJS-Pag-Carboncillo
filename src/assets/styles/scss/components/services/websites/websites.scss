@@ -1,0 +1,13 @@
+@use "websites_config" as config;
+
+
+.container-service-website{
+  background-image: url("../../../../../images/services/websites/background/background-sitios-web.jpg");
+  background-size: "cover";
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: config.$breakpoint-md) {
+    background-position: left center;
+  }
+}

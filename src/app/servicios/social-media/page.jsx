@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-import "../../../assets/styles/css/services/socialMedia/service_social_media.css";
+import "@/assets/styles/css/components/services/socialMedia/service_social_media.css";
 
 //Material UI:
 import { Box, Container, Typography } from "@mui/material";
@@ -12,14 +12,14 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "../../../assets/images/services/socialMedia/carousel/1.png";
-import imgCarousel2 from "../../../assets/images/services/socialMedia/carousel/2.png";
-import imgCarousel3 from "../../../assets/images/services/socialMedia/carousel/3.png";
-import imgCarousel4 from "../../../assets/images/services/socialMedia/carousel/4.png";
-import imgCarousel5 from "../../../assets/images/services/socialMedia/carousel/5.png";
-import imgCarousel6 from "../../../assets/images/services/socialMedia/carousel/6.png";
-import imgCarousel7 from "../../../assets/images/services/socialMedia/carousel/7.png";
-import imgCarousel8 from "../../../assets/images/services/socialMedia/carousel/8.png";
+import imgCarousel1 from "@/assets/images/services/socialMedia/carousel/1.png";
+import imgCarousel2 from "@/assets/images/services/socialMedia/carousel/2.png";
+import imgCarousel3 from "@/assets/images/services/socialMedia/carousel/3.png";
+import imgCarousel4 from "@/assets/images/services/socialMedia/carousel/4.png";
+import imgCarousel5 from "@/assets/images/services/socialMedia/carousel/5.png";
+import imgCarousel6 from "@/assets/images/services/socialMedia/carousel/6.png";
+import imgCarousel7 from "@/assets/images/services/socialMedia/carousel/7.png";
+import imgCarousel8 from "@/assets/images/services/socialMedia/carousel/8.png";
 
 function SocialMedia() {
   const containerSectionPackage = useRef(null);

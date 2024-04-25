@@ -1,0 +1,13 @@
+.container-origin {
+  background-image: url("../../../../images/origin/background-filosofia.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (min-width: 900px) {
+  .container-origin {
+    background-position: left center;
+  }
+}
+
+/*# sourceMappingURL=origin.css.map */

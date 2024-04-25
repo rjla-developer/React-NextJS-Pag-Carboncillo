@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-import "../../../assets/styles/css/services/extra/extra.css";
+import "@/assets/styles/css/components/services/extra/extra.css";
 
 //Material UI:
 import { Box, Container, Typography } from "@mui/material";

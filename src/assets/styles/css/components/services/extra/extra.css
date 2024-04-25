@@ -1,0 +1,13 @@
+.container-extra {
+  background-image: url("../../../../../images/services/extra/background/background-extra.webp");
+  background-size: "cover";
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (min-width: 900px) {
+  .container-extra {
+    background-position: left center;
+  }
+}
+
+/*# sourceMappingURL=extra.css.map */

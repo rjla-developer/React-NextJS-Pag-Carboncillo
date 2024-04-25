@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-import "../../../assets/styles/css/services/brandDesign/brand_design.css";
+import "@/assets/styles/css/components/services/brandDesign/brand_design.css";
 
 //Material UI:
 import { Box, Container, Typography } from "@mui/material";
@@ -12,17 +12,17 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "../../../assets/images/services/brandDesign/carousel/1.png";
-import imgCarousel2 from "../../../assets/images/services/brandDesign/carousel/2.png";
-import imgCarousel3 from "../../../assets/images/services/brandDesign/carousel/3.png";
-import imgCarousel4 from "../../../assets/images/services/brandDesign/carousel/4.png";
-import imgCarousel5 from "../../../assets/images/services/brandDesign/carousel/5.png";
-import imgCarousel6 from "../../../assets/images/services/brandDesign/carousel/6.png";
-import imgCarousel7 from "../../../assets/images/services/brandDesign/carousel/7.png";
-import imgCarousel8 from "../../../assets/images/services/brandDesign/carousel/8.png";
-import imgCarousel9 from "../../../assets/images/services/brandDesign/carousel/9.png";
-import imgCarousel10 from "../../../assets/images/services/brandDesign/carousel/10.png";
-import imgCarousel11 from "../../../assets/images/services/brandDesign/carousel/11.png";
+import imgCarousel1 from "@/assets/images/services/brandDesign/carousel/1.png";
+import imgCarousel2 from "@/assets/images/services/brandDesign/carousel/2.png";
+import imgCarousel3 from "@/assets/images/services/brandDesign/carousel/3.png";
+import imgCarousel4 from "@/assets/images/services/brandDesign/carousel/4.png";
+import imgCarousel5 from "@/assets/images/services/brandDesign/carousel/5.png";
+import imgCarousel6 from "@/assets/images/services/brandDesign/carousel/6.png";
+import imgCarousel7 from "@/assets/images/services/brandDesign/carousel/7.png";
+import imgCarousel8 from "@/assets/images/services/brandDesign/carousel/8.png";
+import imgCarousel9 from "@/assets/images/services/brandDesign/carousel/9.png";
+import imgCarousel10 from "@/assets/images/services/brandDesign/carousel/10.png";
+import imgCarousel11 from "@/assets/images/services/brandDesign/carousel/11.png";
 
 function BrandDesign() {
   const containerSectionPackage = useRef(null);

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
-import "../../styles/css/home/home_section_origin.css";
+import "@/assets/styles/css/components/home/home_section_origin.css";
 
 //Next js:
 import Link from "next/link";

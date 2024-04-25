@@ -1,0 +1,17 @@
+.container-home-section-welcome {
+  background-image: url("../../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro-responsive.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media (min-width: 900px) {
+  .container-home-section-welcome {
+    background-image: url("../../../../images/home/estatua-angel-de-la-independencia-en-blanco-y-negro.png");
+  }
+}
+
+.container-home-section-welcome p {
+  font-family: "Jaapokkisubtract-Regular";
+}
+
+/*# sourceMappingURL=home_section_welcome.css.map */

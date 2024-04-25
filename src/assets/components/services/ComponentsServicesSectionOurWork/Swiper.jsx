@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../../../styles/css/services/components/swiper.css";
+import "@/assets/styles/css/components/services/components/swiper.css";
 
 //NextJS:
 import Image from "next/image";

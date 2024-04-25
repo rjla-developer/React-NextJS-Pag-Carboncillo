@@ -12,14 +12,14 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "@/assets/images/services/socialMediaSuperior/carousel/10.png";
-import imgCarousel2 from "@/assets/images/services/socialMediaSuperior/carousel/11.png";
-import imgCarousel3 from "@/assets/images/services/socialMediaSuperior/carousel/12.png";
-import imgCarousel4 from "@/assets/images/services/socialMediaSuperior/carousel/13.png";
-import imgCarousel5 from "@/assets/images/services/socialMediaSuperior/carousel/14.png";
-import imgCarousel6 from "@/assets/images/services/socialMediaSuperior/carousel/15.png";
-import imgCarousel7 from "@/assets/images/services/socialMediaSuperior/carousel/16.png";
-import imgCarousel8 from "@/assets/images/services/socialMediaSuperior/carousel/17.png";
+import imgCarousel1 from "@/assets/images/components/services/socialMediaSuperior/carousel/10.png";
+import imgCarousel2 from "@/assets/images/components/services/socialMediaSuperior/carousel/11.png";
+import imgCarousel3 from "@/assets/images/components/services/socialMediaSuperior/carousel/12.png";
+import imgCarousel4 from "@/assets/images/components/services/socialMediaSuperior/carousel/13.png";
+import imgCarousel5 from "@/assets/images/components/services/socialMediaSuperior/carousel/14.png";
+import imgCarousel6 from "@/assets/images/components/services/socialMediaSuperior/carousel/15.png";
+import imgCarousel7 from "@/assets/images/components/services/socialMediaSuperior/carousel/16.png";
+import imgCarousel8 from "@/assets/images/components/services/socialMediaSuperior/carousel/17.png";
 
 function SocialMediaSuperior() {
   const containerSectionPackage = useRef(null);

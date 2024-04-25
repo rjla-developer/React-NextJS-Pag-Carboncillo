@@ -39,8 +39,8 @@ import "@/assets/styles/css/utils/components/navbar/navbar.css";
 import { BiSolidDownArrow } from "react-icons/bi";
 
 //Images:
-import imgCarboncillo from "@/assets/images/global/logo/logo-compañia-de-marketing-digital.png";
-import imgCarboncilloCompact from "@/assets/images/global/logo/logo-compacto-compañia-de-marketing-digital.webp";
+import imgCarboncillo from "@/assets/images/utils/components/navbar/logo-compañia-de-marketing-digital.png";
+import imgCarboncilloCompact from "@/assets/images/utils/components/navbar/logo-compacto-compañia-de-marketing-digital.webp";
 
 const drawerWidth = 240;
 

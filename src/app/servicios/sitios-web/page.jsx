@@ -12,12 +12,12 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "@/assets/images/services/websites/carousel/1.png";
-import imgCarousel2 from "@/assets/images/services/websites/carousel/2.png";
-import imgCarousel3 from "@/assets/images/services/websites/carousel/3.webp";
-import imgCarousel4 from "@/assets/images/services/websites/carousel/4.png";
-import imgCarousel5 from "@/assets/images/services/websites/carousel/5.webp";
-import imgCarousel6 from "@/assets/images/services/websites/carousel/6.png";
+import imgCarousel1 from "@/assets/images/components/services/websites/carousel/1.png";
+import imgCarousel2 from "@/assets/images/components/services/websites/carousel/2.png";
+import imgCarousel3 from "@/assets/images/components/services/websites/carousel/3.webp";
+import imgCarousel4 from "@/assets/images/components/services/websites/carousel/4.png";
+import imgCarousel5 from "@/assets/images/components/services/websites/carousel/5.webp";
+import imgCarousel6 from "@/assets/images/components/services/websites/carousel/6.png";
 
 function Website() {
   const containerSectionPackage = useRef(null);

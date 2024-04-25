@@ -12,14 +12,14 @@ import ServiceSectionPackage from "@/assets/components/services/ServiceSectionPa
 import ServiceSectionOurWork from "@/assets/components/services/ServiceSectionOurWork";
 
 //Images:
-import imgCarousel1 from "@/assets/images/services/campaigns/carousel/1.png";
-import imgCarousel2 from "@/assets/images/services/campaigns/carousel/2.png";
-import imgCarousel3 from "@/assets/images/services/campaigns/carousel/3.png";
-import imgCarousel4 from "@/assets/images/services/campaigns/carousel/4.png";
-import imgCarousel5 from "@/assets/images/services/campaigns/carousel/5.png";
-import imgCarousel6 from "@/assets/images/services/campaigns/carousel/6.png";
-import imgCarousel7 from "@/assets/images/services/campaigns/carousel/7.png";
-import imgCarousel8 from "@/assets/images/services/campaigns/carousel/8.png";
+import imgCarousel1 from "@/assets/images/components/services/campaigns/carousel/1.png";
+import imgCarousel2 from "@/assets/images/components/services/campaigns/carousel/2.png";
+import imgCarousel3 from "@/assets/images/components/services/campaigns/carousel/3.png";
+import imgCarousel4 from "@/assets/images/components/services/campaigns/carousel/4.png";
+import imgCarousel5 from "@/assets/images/components/services/campaigns/carousel/5.png";
+import imgCarousel6 from "@/assets/images/components/services/campaigns/carousel/6.png";
+import imgCarousel7 from "@/assets/images/components/services/campaigns/carousel/7.png";
+import imgCarousel8 from "@/assets/images/components/services/campaigns/carousel/8.png";
 
 function Campaigns() {
   const containerSectionPackage = useRef(null);

@@ -1,0 +1,29 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-laptop-mockup{
+    position: absolute;
+    width: 900px;
+    height: 800px;
+    margin-top: -230px;
+    margin-left: -160px;
+    z-index: 2;
+}

@@ -20,11 +20,11 @@ import "swiper/css";
 import imgLaptopMockup from "@/assets/images/components/services/websites/laptop/laptop-mockup.png";
 import imgSmartphoneMockup from "@/assets/images/components/services/websites/smartphone/smartphone-mockup.png";
 import imgWebsiteAerolineaLaptop from "@/assets/images/components/services/websites/laptop/carousel-laptop/aerolinea-laptop.png";
-import imgWebsiteAerolineaMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/aerolinea-smartphone.png";
+import imgWebsiteAerolineaMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/aerolinea-smartphone.jpg";
 import imgWebsiteElectronicaLaptop from "@/assets/images/components/services/websites/laptop/carousel-laptop/electronica-laptop.png";
-import imgWebsiteElectronicaMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/electronica-smartphone.png";
+import imgWebsiteElectronicaMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/electronica-smartphone.jpg";
 import imgWebsiteJuegosLaptop from "@/assets/images/components/services/websites/laptop/carousel-laptop/juegos-vortice-laptop.png";
-import imgWebsiteJuegosMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/juegos-vortice-smartphone.png";
+import imgWebsiteJuegosMobile from "@/assets/images/components/services/websites/smartphone/carousel-smartphone/juegos-vortice-smartphone.jpg";
 
 function WebsiteSectionCarousels() {
     const dataSectionOurWork = {
@@ -69,7 +69,6 @@ function WebsiteSectionCarousels() {
             sx={{
                 pt: { xs: 0, md: 10 },
                 pb: { xs: 8, md: 10 },
-                /* backgroundColor: "green", */
             }}
         >
             <Box sx={{ color: "white" }}>

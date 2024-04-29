@@ -18,7 +18,7 @@ function Extra() {
     title: (
       <>
         NUNCA ESTá DE MÁS UN{" "}
-        <Typography sx={{ color: "#E04F93" }} variant="span">
+        <Typography sx={{ color: "#16050A" }} variant="span">
           EXTRA
         </Typography>{" "}
       </>

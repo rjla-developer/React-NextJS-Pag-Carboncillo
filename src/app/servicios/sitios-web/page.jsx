@@ -31,19 +31,15 @@ function Website() {
         colorCard: "#c89d85",
         dataPackage: [
             {
-                title: "Landing Page $4,999 MXN",
-                description:
-                    "Página web diseñada específicamente, para convertir visitantes en leads.",
+                title: "Landing Page $5,990 MXN",
                 include: [
-                    "Página web diseñada específicamente, para convertir visitantes en leads.",
+                    "*Único pago (posteriormente pagarás la renovación del hosting y mantenimiento de tu sitio:  $200 USD AL AÑO O $15 USD AL MES SOLO MANTENIMIENTO)",
                 ],
                 restrictions: null,
                 messageRestrictions: true,
             },
             {
                 title: "Informativo $8,999 MXN",
-                description:
-                    "Ideal para convertir y proporcionar la esencia informativa de tu marca.",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",
                 ],
@@ -51,9 +47,7 @@ function Website() {
                 messageRestrictions: true,
             },
             {
-                title: "Silver $14,999 MXN",
-                description:
-                    "La herramienta perfecta, para llevar tus servicios o productos a las manos de los consumidores.",
+                title: "Ecommerce a WhatsApp Económico $13,999 MXN",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",
                 ],
@@ -61,9 +55,7 @@ function Website() {
                 messageRestrictions: true,
             },
             {
-                title: "Golden $17,999 MXN",
-                description:
-                    "La más completa. Abierto al público las 24 hrs. Sin limitaciones geográficas. Gestión sencilla y rápida. Reduce gastos.",
+                title: "Ecommerce con Pasarela de Pago Económico $15,999 MXN",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",
                 ],

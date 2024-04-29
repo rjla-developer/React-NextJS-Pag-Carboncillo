@@ -1,12 +1,13 @@
 .container-service-website {
   background-image: url("../../../../../images/components/services/websites/background/background-sitios-web.jpg");
-  background-size: "cover";
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 @media (min-width: 900px) {
   .container-service-website {
     background-position: left center;
+    background-size: "cover";
   }
 }
 

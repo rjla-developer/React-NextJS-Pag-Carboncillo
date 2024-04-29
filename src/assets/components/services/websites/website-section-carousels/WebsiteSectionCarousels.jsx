@@ -87,7 +87,15 @@ function WebsiteSectionCarousels() {
                     ¡Da un vistazo a nuestro trabajo!
                 </Typography>
             </Box>
-            <Grid container sx={{ mt: 8, display:"flex", justifyContent:"space-around" }}>
+            <Grid
+                container
+                sx={{
+                    mt: 8,
+                    display: "flex",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                }}
+            >
                 <Grid item xs={10} md={2.9}>
                     <Box>
                         <Image
@@ -118,7 +126,7 @@ function WebsiteSectionCarousels() {
                         </Swiper>
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={6} sx={{mt: {xs: 8, md: 0}}}>
+                <Grid item xs={12} md={6} sx={{ mt: { xs: 8, md: 0 } }}>
                     <Box>
                         <Image
                             src={imgLaptopMockup}
@@ -148,6 +156,7 @@ function WebsiteSectionCarousels() {
                         </Swiper>
                     </Box>
                 </Grid>
+                
             </Grid>
         </Container>
     );

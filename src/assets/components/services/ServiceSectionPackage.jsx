@@ -8,7 +8,10 @@ import CardPackage from "./ComponentsServicesSectionPackage/CardPackage";
 
 function ServiceSectionPackage({ dataSectionPackage }) {
     return (
-        <Container sx={{ color: "white", py: 5 }} maxWidth={false}>
+        <Container
+            sx={{ color: "white", py: 5, mb: { xs: 35, md: 6 } }}
+            maxWidth={false}
+        >
             <Grid container>
                 <Grid item xs={12}>
                     <Box>
@@ -32,12 +35,13 @@ function ServiceSectionPackage({ dataSectionPackage }) {
                 <Grid item xs={12}>
                     <Grid
                         container
-                        columnGap={1.5}
+                        gap={2.5}
                         sx={{
                             mt: 5,
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
+                            height: {xs: "25%", md: "50%", xl: "80%"},
                         }}
                     >
                         {dataSectionPackage.dataPackage.map((dataItem) => {

@@ -32,8 +32,6 @@ function Extra() {
     dataPackage: [
       {
         title: "Red extra $499",
-        description:
-          "Página web diseñada específicamente, para convertir visitantes en leads.",
         include: [
           " Análisis de mercado",
           "Selección de palabras clave.",

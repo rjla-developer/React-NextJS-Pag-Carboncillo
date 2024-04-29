@@ -31,7 +31,7 @@ function CardPackage({ dataItem, colorCard }) {
         throw new Error("Bad Hex");
     }
     return (
-        <Grid item xs={12} md={2.9} sx={{ mb: 4 }}>
+        <Grid item xs={12} md={5} lg={2.9} sx={{ mb: 4, height: "100%" }}>
             <Box
                 sx={{
                     p: 2,
@@ -41,7 +41,7 @@ function CardPackage({ dataItem, colorCard }) {
                     boxShadow:
                         "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)",
                     borderRadius: 10,
-                    height: "95%", //400
+                    height: "100%", //400
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

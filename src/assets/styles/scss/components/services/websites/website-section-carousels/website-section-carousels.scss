@@ -1,3 +1,5 @@
+@use "website-section-carousels_config" as config;
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -12,14 +14,20 @@
 
 .img-laptop-mockup {
     position: absolute;
-    width: 900px;
-    height: 800px;
-    margin-top: -230px;
-    margin-left: -160px;
+    width: 520px;
+    height: 500px;
+    margin-top: -150px;
+    margin-left: -95px;
     z-index: 2;
+    @media (min-width: config.$breakpoint-md) {
+        width: 900px;
+        height: 800px;
+        margin-top: -230px;
+        margin-left: -160px;
+    }
 }
 
-.img-laptop-mockup-carousel{
+.img-laptop-mockup-carousel {
     display: block;
     width: 100%;
     height: 100%;
@@ -29,17 +37,28 @@
 
 .img-smarthphone-mockup {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    margin-top: -75px;
-    margin-left: -70px;
     z-index: 2;
-    
+    object-fit: cover;
+    margin-top: -80px;
+    margin-left: -60px;
+    @media (min-width: config.$breakpoint-md) {
+        width: 55%;
+        height: 97%;
+        margin-top: -75px;
+        margin-left: -255px;
+        object-fit: fill;
+    }
 }
 
 .img-smartphone-mockup-carousel {
-    width: 45%;
-    height: 600px;
+    width: 100%;
+    height: 580px;
     z-index: 1;
     border-radius: 35px;
+    @media (min-width: config.$breakpoint-md) {
+        width: 100%;
+    height: 600px;
+    }
 }

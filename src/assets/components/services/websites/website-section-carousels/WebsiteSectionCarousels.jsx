@@ -91,6 +91,36 @@ function WebsiteSectionCarousels() {
                 <Grid item xs={12} md={6}>
                     <Box>
                         <Image
+                            src={imgSmartphoneMockup}
+                            alt="Smarthphone mockup"
+                            className="img-smarthphone-mockup"
+                        />
+                        <Swiper
+                            className="mySwiper"
+                            loop={true}
+                            autoplay={{
+                                delay: 4500,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay]}
+                        >
+                            {dataSectionOurWork.dataSmartphoneCarousel.map(
+                                (item) => (
+                                    <SwiperSlide key={item.id}>
+                                        <Image
+                                            src={item.image}
+                                            alt={item.alt}
+                                            className="img-smartphone-mockup-carousel"
+                                        />
+                                    </SwiperSlide>
+                                )
+                            )}
+                        </Swiper>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Box>
+                        <Image
                             src={imgLaptopMockup}
                             alt="Laptop mockup"
                             className="img-laptop-mockup"
@@ -110,6 +140,7 @@ function WebsiteSectionCarousels() {
                                         <Image
                                             src={item.image}
                                             alt={item.alt}
+                                            className="img-laptop-mockup-carousel"
                                         />
                                     </SwiperSlide>
                                 )

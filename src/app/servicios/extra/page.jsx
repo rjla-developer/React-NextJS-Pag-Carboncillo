@@ -17,7 +17,7 @@ function Extra() {
   const dataSectionWelcome = {
     title: (
       <>
-        NUNCA DE MÁS UN{" "}
+        NUNCA ESTá DE MÁS UN{" "}
         <Typography sx={{ color: "#E04F93" }} variant="span">
           EXTRA
         </Typography>{" "}

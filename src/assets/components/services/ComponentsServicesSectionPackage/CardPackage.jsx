@@ -42,7 +42,10 @@ function CardPackage({ dataItem, colorCard }) {
                         "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)",
                     borderRadius: 10,
                     height: "95%",
-                    display: "flex", flexDirection:"column", alignItems: "center", justifyContent:"space-around"
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "space-around",
                 }}
             >
                 <Typography sx={{ fontSize: 20, color: colorCard }}>
@@ -87,7 +90,7 @@ function CardPackage({ dataItem, colorCard }) {
                         * Aplican restricciones.
                     </Typography>
                 ) : null}
-                </Box>
+            </Box>
         </Grid>
     );
 }

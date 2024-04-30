@@ -35,13 +35,13 @@ function ServiceSectionPackage({ dataSectionPackage }) {
                 <Grid item xs={12}>
                     <Grid
                         container
-                        gap={2.5}
+                        gap={1.5}
                         sx={{
                             mt: 5,
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            height: {xs: "25%", md: "50%", xl: "80%"},
+                            height: {xs: "auto", md: 400},
                         }}
                     >
                         {dataSectionPackage.dataPackage.map((dataItem) => {

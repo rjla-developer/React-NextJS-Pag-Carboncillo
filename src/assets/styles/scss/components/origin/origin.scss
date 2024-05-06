@@ -1,0 +1,12 @@
+@use "origin_config" as config;
+
+.container-origin {
+  background-image: url("../../../../images/components/origin/background-filosofia.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  @media (min-width: config.$breakpoint-md) {
+    background-position: left center;
+  }
+}

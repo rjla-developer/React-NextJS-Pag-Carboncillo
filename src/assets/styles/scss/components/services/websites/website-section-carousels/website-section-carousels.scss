@@ -1,0 +1,63 @@
+@use "website-section-carousels_config" as config;
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-laptop-mockup {
+    position: absolute;
+    width: 520px;
+    height: 500px;
+    margin-top: -150px;
+    margin-left: -95px;
+    z-index: 2;
+    @media (min-width: config.$breakpoint-md) {
+        width: 900px;
+        height: 800px;
+        margin-top: -230px;
+        margin-left: -160px;
+    }
+}
+
+.img-laptop-mockup-carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-smarthphone-mockup {
+    position: absolute;
+    width: 740px;
+    height: 750px;
+    z-index: 2;
+    object-fit: cover;
+    margin-top: -80px;
+    margin-left: -235px;
+    @media (min-width: config.$breakpoint-md) {
+        width: 740px;
+        height: 778px;
+        margin-top: -85px;
+        margin-left: -230px;
+        object-fit: fill;
+    }
+}
+
+.img-smartphone-mockup-carousel {
+    width: 100%;
+    height: 580px;
+    z-index: 1;
+    border-radius: 35px;
+    @media (min-width: config.$breakpoint-md) {
+        width: 100%;
+        height: 600px;
+    }
+}

@@ -7,14 +7,14 @@ import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 
 //Images:
-import imgPublicAnchor from "../../images/home/homeSectionCommunity/logo-public-anchor.png";
-import imgEcoService from "../../images/home/homeSectionCommunity/logo-eco-service.png";
-import imgCaizen from "../../images/home/homeSectionCommunity/logo-caizen.png";
-import imgRoft from "../../images/home/homeSectionCommunity/logo-roft.png";
-import imgStudios from "../../images/home/homeSectionCommunity/logo-studios.png";
-import imgkoff from "../../images/home/homeSectionCommunity/logo-koff.png";
-import imgMindPulse from "../../images/home/homeSectionCommunity/logo-mind-pulse.png";
-import imgTheRoughHouse from "../../images/home/homeSectionCommunity/logo-the-rough-house.png";
+import imgPublicAnchor from "@/assets/images/components/home/homeSectionCommunity/logo-public-anchor.png";
+import imgEcoService from "@/assets/images/components/home/homeSectionCommunity/logo-eco-service.png";
+import imgCaizen from "@/assets/images/components/home/homeSectionCommunity/logo-caizen.png";
+import imgRoft from "@/assets/images/components/home/homeSectionCommunity/logo-roft.png";
+import imgStudios from "@/assets/images/components/home/homeSectionCommunity/logo-studios.png";
+import imgkoff from "@/assets/images/components/home/homeSectionCommunity/logo-koff.png";
+import imgMindPulse from "@/assets/images/components/home/homeSectionCommunity/logo-mind-pulse.png";
+import imgTheRoughHouse from "@/assets/images/components/home/homeSectionCommunity/logo-the-rough-house.png";
 
 function HomeSectionCommunity() {
   const dataSectionCommunity = [

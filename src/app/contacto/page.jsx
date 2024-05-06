@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-import "../../assets/styles/css/contact/contact.css";
+import "@/assets/styles/css/components/contact/contact.css";
 
 //NextJS:
 import Link from "next/link";

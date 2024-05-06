@@ -7,9 +7,9 @@ import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 
 //Images:
-import imgFeed from "../../images/home/homeSectionOurWork/diseno-feed-instagram-increibles.png";
-import imgBrandDesign from "../../images/home/homeSectionOurWork/diseño-de-marca.png";
-import imgCorporateStationery from "../../images/home/homeSectionOurWork/papeleria-corporativa.jpeg";
+import imgFeed from "@/assets/images/components/home/homeSectionOurWork/diseno-feed-instagram-increibles.png";
+import imgBrandDesign from "@/assets/images/components/home/homeSectionOurWork/diseño-de-marca.png";
+import imgCorporateStationery from "@/assets/images/components/home/homeSectionOurWork/papeleria-corporativa.jpeg";
 
 function HomeSectionOurWork() {
   const dataOurWork = [

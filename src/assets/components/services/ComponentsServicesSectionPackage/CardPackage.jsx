@@ -31,7 +31,7 @@ function CardPackage({ dataItem, colorCard }) {
         throw new Error("Bad Hex");
     }
     return (
-        <Grid item xs={12} md={2.9} sx={{ mb: 4 }}>
+        <Grid item xs={12} md={5} lg={2.9} sx={{ mb: 4, height: "100%" }}>
             <Box
                 sx={{
                     p: 2,
@@ -41,53 +41,72 @@ function CardPackage({ dataItem, colorCard }) {
                     boxShadow:
                         "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)",
                     borderRadius: 10,
-                    height: "95%",
-                    display: "flex", flexDirection:"column", alignItems: "center", justifyContent:"space-around"
+                    height: "100%", //400
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "space-around",
                 }}
             >
                 <Typography sx={{ fontSize: 20, color: colorCard }}>
                     {dataItem.title}
                 </Typography>
-                <Typography sx={{ mt: 3 }}>Plan mensual incluye:</Typography>
-                <List>
-                    {dataItem.include.map((serviceInclude) => {
-                        return (
-                            <ListItem key={serviceInclude} sx={{ p: 0 }}>
-                                <ListItemText
-                                    sx={{ textAlign: "center" }}
-                                    primary={`- ${serviceInclude}`}
-                                />
-                            </ListItem>
-                        );
-                    })}
-                </List>
+                {dataItem.description ? (
+                    <Typography sx={{ textAlign: "start", mx: 1.5, my: 2 }}>
+                        {dataItem.description}
+                    </Typography>
+                ) : null}
+                {dataItem.include ? (
+                    <>
+                        <Typography sx={{ mt: 3 }}>
+                            Plan mensual incluye:
+                        </Typography>
+                        <List>
+                            {dataItem.include?.map((serviceInclude) => {
+                                return (
+                                    <ListItem
+                                        key={serviceInclude}
+                                        sx={{ p: 0 }}
+                                    >
+                                        <ListItemText
+                                            sx={{ textAlign: "center" }}
+                                            primary={`- ${serviceInclude}`}
+                                        />
+                                    </ListItem>
+                                );
+                            })}
+                        </List>
+                    </>
+                ) : null}
 
                 {dataItem.restrictions ? (
                     <Typography>{dataItem.restrictions}</Typography>
                 ) : null}
 
-                <Button
-                    sx={{
-                        color: "black",
-                        backgroundColor: colorCard,
-                        opacity: "85%",
-                        mt: 2,
-                        px: 4,
-                        borderRadius: 25,
-                        "&:hover": {
+                <Box>
+                    <Button
+                        sx={{
+                            color: "black",
                             backgroundColor: colorCard,
-                            opacity: "100%",
-                        },
-                    }}
-                >
-                    Contratar
-                </Button>
-                {dataItem.messageRestrictions ? (
-                    <Typography sx={{ mt: 1, fontSize: 10 }}>
-                        * Aplican restricciones.
-                    </Typography>
-                ) : null}
+                            opacity: "85%",
+                            mt: 2,
+                            px: 4,
+                            borderRadius: 25,
+                            "&:hover": {
+                                backgroundColor: colorCard,
+                                opacity: "100%",
+                            },
+                        }}
+                    >
+                        Contratar
+                    </Button>
+                    {dataItem.messageRestrictions ? (
+                        <Typography sx={{ mt: 1, fontSize: 10 }}>
+                            * Aplican restricciones.
+                        </Typography>
+                    ) : null}
                 </Box>
+            </Box>
         </Grid>
     );
 }

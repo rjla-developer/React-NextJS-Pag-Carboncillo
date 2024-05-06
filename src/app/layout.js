@@ -5,10 +5,10 @@ const inter = Inter({ subsets: ["latin"] });
 import "../assets/styles/css/global.css";
 
 //Components:
-import Navbar from "@/assets/components/navbar/Navbar";
+import Navbar from "@/assets/utils/components/navbar/Navbar";
 /* import Navbar2 from '@/assets/components/navbar/Navbar2'; */
 import ThemeProviderMUI from "@/assets/components/global/ThemeProviderMUI";
-import Footer from "@/assets/components/footer/Footer";
+import Footer from "@/assets/utils/components/footer/Footer";
 
 export const metadata = {
   title: "Carboncillo",

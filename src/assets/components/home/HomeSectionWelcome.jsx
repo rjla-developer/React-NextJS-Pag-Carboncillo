@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../styles/css/home/home_section_welcome.css";
+import "@/assets/styles/css/components/home/home_section_welcome.css";
 
 //Material UI:
 import { Box, Container, Grid, Typography } from "@mui/material";

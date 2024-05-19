@@ -67,8 +67,8 @@ function WebsiteSectionCarousels() {
     return (
         <Container
             sx={{
-                pt: { xs: 0, md: 10 },
-                pb: { xs: 8, md: 10 },
+                pt: { xs: 0, lg: 10 },
+                pb: { xs: 8, lg: 10 },
             }}
         >
             <Box sx={{ color: "white" }}>
@@ -95,8 +95,14 @@ function WebsiteSectionCarousels() {
                     alignItems: "center",
                 }}
             >
-                <Grid item xs={10} md={2.9}>
-                    <Box>
+                <Grid item xs={10} lg={2.9}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
                         <Image
                             src={imgSmartphoneMockup}
                             alt="Smarthphone mockup"
@@ -125,8 +131,14 @@ function WebsiteSectionCarousels() {
                         </Swiper>
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={6} sx={{ mt: { xs: 8, md: 0 } }}>
-                    <Box>
+                <Grid item xs={12} lg={6} sx={{ mt: { xs: 8, lg: 0 } }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
                         <Image
                             src={imgLaptopMockup}
                             alt="Laptop mockup"
@@ -155,7 +167,6 @@ function WebsiteSectionCarousels() {
                         </Swiper>
                     </Box>
                 </Grid>
-                
             </Grid>
         </Container>
     );

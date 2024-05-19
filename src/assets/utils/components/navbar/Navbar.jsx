@@ -69,7 +69,6 @@ function Navbar(props) {
         { title: "Origen", Link: "/origen" },
         { title: "Servicios", button: handleShowOrCloseSubMenu },
         { title: "Contácto", Link: "/contacto" },
-        { title: "Carrito", Link: "/carrito" },
         /* { title: "Carrito", Link: "/carrito" }, */
     ];
 

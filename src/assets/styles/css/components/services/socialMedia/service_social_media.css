@@ -1,11 +1,12 @@
 .container-service-social-media {
   background-image: url("../../../../../images/components/services/socialMedia/background/background-social-media.webp");
-  background-size: "cover";
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: top center;
 }
 @media (min-width: 900px) {
   .container-service-social-media {
+    background-size: "cover";
     background-position: left center;
   }
 }

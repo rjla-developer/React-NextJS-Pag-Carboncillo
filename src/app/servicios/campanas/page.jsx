@@ -89,42 +89,42 @@ function Campaigns() {
       {
         id: 0,
         image: imgCarousel1,
-        alt: "",
+        alt: "Una mujer sonriendo tocandose la cara, haciendo referencia a juventud y un texto a lado que dice 'Apariencia fresca y juvenil.'",
       },
       {
         id: 1,
         image: imgCarousel2,
-        alt: "",
+        alt: "Doctora posando con un texto a lado que dice 'Cumplimos con los estándares de calidad!'",
       },
       {
         id: 2,
         image: imgCarousel3,
-        alt: "",
+        alt: "Un modelo dental con una radiografía atras y un texto a lado que dice 'Estudios ortodónticos por solo $800. Contáctanos!'",
       },
       {
         id: 3,
         image: imgCarousel4,
-        alt: "",
+        alt: "Una pizza brazileña con un fondo de ladrillos negros y una etiqueta con el costo de su precio que dice: A solo $125",
       },
       {
         id: 4,
         image: imgCarousel5,
-        alt: "",
+        alt: "Una chica con ropa deportista y un texto a lado que dice: Entrena con nosotros! Combina movimiento y fuerza, al mejor ritmo.",
       },
       {
         id: 5,
         image: imgCarousel6,
-        alt: "",
+        alt: "Una mujer embarazada con pose de boxeadora, ropa color rosa y un moño color rosa, un texto a lado que dice 'Tu salud mamaria, está en nuestras manos! Agenda tu cita",
       },
       {
         id: 6,
         image: imgCarousel7,
-        alt: "",
+        alt: "Un chavo feliz apuntando a un texto que dice 'Gestionamos hasta 6 redes sociales.'",
       },
       {
         id: 7,
         image: imgCarousel8,
-        alt: "",
+        alt: "Un frasco de mantequilla de mani, en un fondo de color amarillo y un texto que dice 'Intenso sabor'",
       },
     ],
   };

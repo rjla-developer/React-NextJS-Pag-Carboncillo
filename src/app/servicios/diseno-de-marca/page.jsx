@@ -61,57 +61,57 @@ function BrandDesign() {
             {
                 id: 0,
                 image: imgCarousel1,
-                alt: "",
+                alt: "Cartas de presentación con diseño personalizado.",
             },
             {
                 id: 1,
                 image: imgCarousel2,
-                alt: "",
+                alt: "Paquete del producto de unas galletas personalizada.",
             },
             {
                 id: 2,
                 image: imgCarousel3,
-                alt: "",
+                alt: "Conjunto de herramientas para ofinica como: Cuaderno, hojas, lapiz, goma para borrar, tarjetas de presentación y cartas, todas ellas personalizadas.",
             },
             {
                 id: 3,
                 image: imgCarousel4,
-                alt: "",
+                alt: "Esta dividido en tres imagenes, la primera es una gorra, la segunda es un termo y la tercera es una sudadera, todos ellos están personalizado con el logo y los colores de la marca del cliente.",
             },
             {
                 id: 4,
                 image: imgCarousel5,
-                alt: "",
+                alt: "Cartas de presentación con diseño personalizado orientado al cliente.",
             },
             {
                 id: 5,
                 image: imgCarousel6,
-                alt: "",
+                alt: "Un letrero lateral que se pone afuera de las tiendas con el logo y los colores de la marca del cliente.",
             },
             {
                 id: 6,
                 image: imgCarousel7,
-                alt: "",
+                alt: "Diseños de logos que se crearon para diferentes marcas.",
             },
             {
                 id: 7,
                 image: imgCarousel8,
-                alt: "",
+                alt: "Conjunto de herramientas para ofinica como: Cuaderno, hojas, lapiz, tarjetas de presentación y cartas, todas ellas personalizadas.",
             },
             {
                 id: 8,
                 image: imgCarousel9,
-                alt: "",
+                alt: "Tres tazas personalizadas con el logo y los colores de la marca del cliente.",
             },
             {
                 id: 9,
                 image: imgCarousel10,
-                alt: "",
+                alt: "Un mandil de cocina con el logo y los colores de la marca del cliente.",
             },
             {
                 id: 10,
                 image: imgCarousel11,
-                alt: "",
+                alt: "Diseño de una caja de pizza personalizada con el logo y los colores de la marca del cliente.",
             },
         ],
     };

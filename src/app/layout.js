@@ -19,7 +19,7 @@ export const metadata = {
 
   formatDetection: {
     email: "carboncillomtk@gmail.com",
-    telephone: "55 611 966 86",
+    telephone: "777 206 66 10",
   },
 
   authors: [

@@ -63,7 +63,7 @@ function Contacto() {
         <Grid container sx={{ mt: {xs: 3, md: 5}, display: "flex", alignItems:"center", justifyContent:"center" }} spacing={2}>
           <Grid item xs={10} md={3}>
             <Link
-              href="https://api.whatsapp.com/send?phone=5561196686&text=Me%20interesa%20informes"
+              href="https://api.whatsapp.com/send?phone=7772066610&text=Me%20interesan%20informes"
               className="link-stop-style"
               rel="noopener noreferrer"
               target="_blank"
@@ -85,7 +85,7 @@ function Contacto() {
                   WhatsApp
                 </Typography>
                 <Typography sx={{ mt: 3, textAlign: "center" }}>
-                  55 611 966 86
+                  777 206 66 10
                 </Typography>
               </Box>
             </Link>

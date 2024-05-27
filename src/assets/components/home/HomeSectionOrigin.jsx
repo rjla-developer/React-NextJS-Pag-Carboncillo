@@ -40,7 +40,7 @@ function HomeSectionOrigin() {
                                 El origen de Carboncillo, se fundamenta en
                                 nuestra pasión por impulsar a las empresas en el
                                 mundo digital. A lo largo de nuestra evolución,
-                                hemos abrazado el desafio de transformar los
+                                hemos abrazado el desafío de transformar los
                                 obstáculos en oportunidades, renaciendo con cada
                                 experiencia y fortalenciendo nuestra
                                 determinación por crear un impacto significativo

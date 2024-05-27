@@ -35,7 +35,7 @@ function Extra() {
             {
                 title: "Red extra $499",
                 include: [
-                    " Análisis de mercado",
+                    " Análisis de mercado.",
                     "Selección de palabras clave.",
                     "Creación de un anuncio.",
                     "2 imágenes para el anuncio.",
@@ -48,7 +48,7 @@ function Extra() {
                 title: "Campaña extra $399 MXN",
                 description: null,
                 include: [
-                    " Análisis de mercado",
+                    " Análisis de mercado.",
                     "Selección de palabras clave.",
                     "Creación de un anuncio.",
                     "Reporte de resultados.",

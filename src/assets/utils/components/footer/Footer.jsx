@@ -49,7 +49,7 @@ function Footer() {
             >
               Links rápidos
             </Typography>
-            <Typography textAlign={"center"}>Terminos y condiciones</Typography>
+            <Typography textAlign={"center"}>Términos y condiciones</Typography>
             <Typography textAlign={"center"}>
               Politicas de privacidad
             </Typography>

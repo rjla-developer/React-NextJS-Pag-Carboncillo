@@ -49,7 +49,7 @@ function Footer() {
             >
               Links rápidos
             </Typography>
-            <Typography textAlign={"center"}>Terminos y condiciones</Typography>
+            <Typography textAlign={"center"}>Términos y condiciones</Typography>
             <Typography textAlign={"center"}>
               Politicas de privacidad
             </Typography>
@@ -93,7 +93,7 @@ function Footer() {
               </Link>
 
               <Link
-                href="https://api.whatsapp.com/send?phone=5561196686&text=Me%20interesa%20informes"
+                href="https://api.whatsapp.com/send?phone=7772066610&text=Me%20interesan%20informes"
                 rel="noopener noreferrer"
                 target="_blank"
               >

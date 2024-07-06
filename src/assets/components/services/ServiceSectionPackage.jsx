@@ -9,7 +9,7 @@ import CardPackage from "./ComponentsServicesSectionPackage/CardPackage";
 function ServiceSectionPackage({ dataSectionPackage }) {
     return (
         <Container
-            sx={{ color: "white", py: 5, mb: { xs: 35, md: 6 } }}
+            sx={{ color: "white", py: 0, mb: { xs: 8, md: 6 } }}
             maxWidth={false}
         >
             <Grid container>

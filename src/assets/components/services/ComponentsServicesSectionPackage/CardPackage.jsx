@@ -11,6 +11,9 @@ import {
     Typography,
 } from "@mui/material";
 
+//NextJS:
+import Link from "next/link";
+
 function CardPackage({ dataItem, colorCard }) {
     function hexToRgbA(hex, alpha) {
         let c;
@@ -84,22 +87,29 @@ function CardPackage({ dataItem, colorCard }) {
                 ) : null}
 
                 <Box>
-                    <Button
-                        sx={{
-                            color: "black",
-                            backgroundColor: colorCard,
-                            opacity: "85%",
-                            mt: 2,
-                            px: 4,
-                            borderRadius: 25,
-                            "&:hover": {
-                                backgroundColor: colorCard,
-                                opacity: "100%",
-                            },
-                        }}
+                    <Link
+                        href={`https://api.whatsapp.com/send?phone=7772066610&text=Me%20interesan%20informes%20sobre%20el%20paquete:%20"${dataItem.title}"`}
+                        className="link-stop-style"
+                        rel="noopener noreferrer"
+                        target="_blank"
                     >
-                        Contratar
-                    </Button>
+                        <Button
+                            sx={{
+                                color: "black",
+                                backgroundColor: colorCard,
+                                opacity: "85%",
+                                mt: 2,
+                                px: 4,
+                                borderRadius: 25,
+                                "&:hover": {
+                                    backgroundColor: colorCard,
+                                    opacity: "100%",
+                                },
+                            }}
+                        >
+                            Contratar
+                        </Button>
+                    </Link>
                     {dataItem.messageRestrictions ? (
                         <Typography sx={{ mt: 1, fontSize: 10 }}>
                             * Aplican restricciones.

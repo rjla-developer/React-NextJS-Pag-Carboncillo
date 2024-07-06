@@ -12,52 +12,50 @@
     align-items: center;
 }
 
-.img-laptop-mockup {
-    position: absolute;
-    width: 520px;
-    height: 500px;
-    margin-top: -150px;
-    margin-left: -95px;
-    z-index: 2;
-    @media (min-width: config.$breakpoint-md) {
-        width: 900px;
-        height: 800px;
-        margin-top: -230px;
-        margin-left: -160px;
+.img-laptop-mockup-carousel {
+    width: 300px;
+    height: 180px;
+    z-index: 1;
+    @media (min-width: config.$breakpoint-lg) {
+        width: 580px;
+        height: 350px;
     }
 }
 
-.img-laptop-mockup-carousel {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+.img-laptop-mockup {
+    position: absolute;
+    width: 390px;
+    height: 220px;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 2;
+    @media (min-width: config.$breakpoint-lg) {
+        width: 742px;
+        height: 400px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 }
 
 .img-smarthphone-mockup {
     position: absolute;
-    width: 740px;
-    height: 750px;
+    width: 310px;
+    height: 620px;
     z-index: 2;
-    object-fit: cover;
-    margin-top: -80px;
-    margin-left: -235px;
-    @media (min-width: config.$breakpoint-md) {
-        width: 740px;
-        height: 778px;
-        margin-top: -85px;
-        margin-left: -230px;
+    @media (min-width: config.$breakpoint-lg) {
+        width: 310px;
+        height: 640px;
         object-fit: fill;
     }
 }
 
 .img-smartphone-mockup-carousel {
-    width: 100%;
+    width: 270px;
     height: 580px;
     z-index: 1;
     border-radius: 35px;
-    @media (min-width: config.$breakpoint-md) {
-        width: 100%;
+    @media (min-width: config.$breakpoint-lg) {
+        width: 270px;
         height: 600px;
     }
 }

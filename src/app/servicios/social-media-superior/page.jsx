@@ -72,42 +72,42 @@ function SocialMediaSuperior() {
       {
         id: 0,
         image: imgCarousel1,
-        alt: "",
+        alt: "Una ala de pollo en una tabla de madera, con fuego de fondo y un texto que dice: Pollo de verdad.",
       },
       {
         id: 1,
         image: imgCarousel2,
-        alt: "",
+        alt: "Un carro todo terreno en un camino de tierra, con un texto que dice: Diversión garantizada.",
       },
       {
         id: 2,
         image: imgCarousel3,
-        alt: "",
+        alt: "Una hamburguesa gigantesca de muchas capas y unas alas dibujadas de fondo, con un texto que dice: Como caída del cielo.",
       },
       {
         id: 3,
         image: imgCarousel4,
-        alt: "",
+        alt: "Un plato de ceviche con camarones, de fondo el mar y un texto que dice: A falta de amor CEVICHE.",
       },
       {
         id: 4,
         image: imgCarousel5,
-        alt: "",
+        alt: "Un perfume color rojo y tapa negra, con una serpiente cuidando la botella, con un texto que dice: Poison hypnotic!",
       },
       {
         id: 5,
         image: imgCarousel6,
-        alt: "",
+        alt: "Una chava feliz con muchas cajas al rededor y de fondo su casa nueva, con un texto que dice: ¡Te ayuda a encontrar tu nuevo hogar!",
       },
       {
         id: 6,
         image: imgCarousel7,
-        alt: "",
+        alt: "La torre de pisa con un fondo de color rojo, con un texto que dice: ¡Vacaciones con todo incluido!",
       },
       {
         id: 7,
         image: imgCarousel8,
-        alt: "",
+        alt: "Una chava contenta apuntando a la camara y un texto que dice: Maximiza el potencial de tus redes sociales. Desde $150",
       },
     ],
   };

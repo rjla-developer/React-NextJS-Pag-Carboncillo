@@ -1,8 +1,14 @@
 .container-service-campaigns {
   background-image: url("../../../../../images/components/services/campaigns/background/background-campanas.webp");
-  background-size: "cover";
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: top center;
+}
+@media (min-width: 900px) {
+  .container-service-campaigns {
+    background-size: "cover";
+    background-position: left center;
+  }
 }
 
 /*# sourceMappingURL=campaigns.css.map */

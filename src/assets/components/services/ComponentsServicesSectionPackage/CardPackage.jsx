@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 //Material UI:
@@ -10,9 +12,6 @@ import {
     ListItemText,
     Typography,
 } from "@mui/material";
-
-//NextJS:
-import Link from "next/link";
 
 function CardPackage({ dataItem, colorCard }) {
     function hexToRgbA(hex, alpha) {
@@ -33,6 +32,21 @@ function CardPackage({ dataItem, colorCard }) {
         }
         throw new Error("Bad Hex");
     }
+
+    async function goToCheckout(priceId) {
+        const res = await fetch("/checkout", {
+            method: "POST",
+            body: JSON.stringify({
+                priceId,
+            }),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        const data = await res.json();
+        window.location.href = data.url;
+    }
+
     return (
         <Grid item xs={12} md={5} lg={2.9} sx={{ mb: 4, height: "100%" }}>
             <Box
@@ -87,29 +101,23 @@ function CardPackage({ dataItem, colorCard }) {
                 ) : null}
 
                 <Box>
-                    <Link
-                        href={`https://api.whatsapp.com/send?phone=7772066610&text=Me%20interesan%20informes%20sobre%20el%20paquete:%20"${dataItem.title}"`}
-                        className="link-stop-style"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        <Button
-                            sx={{
-                                color: "black",
+                    <Button
+                        sx={{
+                            color: "black",
+                            backgroundColor: colorCard,
+                            opacity: "85%",
+                            mt: 2,
+                            px: 4,
+                            borderRadius: 25,
+                            "&:hover": {
                                 backgroundColor: colorCard,
-                                opacity: "85%",
-                                mt: 2,
-                                px: 4,
-                                borderRadius: 25,
-                                "&:hover": {
-                                    backgroundColor: colorCard,
-                                    opacity: "100%",
-                                },
-                            }}
-                        >
-                            Contratar
-                        </Button>
-                    </Link>
+                                opacity: "100%",
+                            },
+                        }}
+                        onClick={() => goToCheckout(dataItem.id)}
+                    >
+                        Contratar
+                    </Button>
                     {dataItem.messageRestrictions ? (
                         <Typography sx={{ mt: 1, fontSize: 10 }}>
                             * Aplican restricciones.

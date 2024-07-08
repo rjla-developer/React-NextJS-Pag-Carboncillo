@@ -42,7 +42,7 @@ function SocialMedia() {
     colorCard: "#CF9A07",
     dataPackage: [
       {
-        id: 1,
+        id: 'price_1Pa7eVHM5zitWxD69F5x5xt0',
         title: "Elemental $1,499 MXN",
         description: null,
         include: [
@@ -57,7 +57,7 @@ function SocialMedia() {
         messageRestrictions: true,
       },
       {
-        id: 2,
+        id: 'price_1Pa7fPHM5zitWxD6UteRNf2a',
         title: "Estándar $1,999 MXN",
         description: null,
         include: [
@@ -72,7 +72,7 @@ function SocialMedia() {
         messageRestrictions: true,
       },
       {
-        id: 3,
+        id: 'price_1Pa7hEHM5zitWxD6PlCc978d',
         title: "Completo $2,499 MXN",
         description: null,
         include: [

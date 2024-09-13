@@ -34,7 +34,7 @@ function SocialMediaSuperior() {
     colorCard: "#029769",
     dataPackage: [
       {
-        id: 1,
+        id: 'price_1PyQ1aHM5zitWxD696hzEGXS',
         title: "Silver $2,499 MXN",
         description: null,
         include: [
@@ -49,7 +49,7 @@ function SocialMediaSuperior() {
         messageRestrictions: true,
       },
       {
-        id: 2,
+        id: "price_1PyQ2KHM5zitWxD6TAcco7qi",
         title: "Gold $3,299 MXN",
         description: null,
         include: [

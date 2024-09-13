@@ -33,6 +33,7 @@ function Extra() {
         colorCard: "#E04F93",
         dataPackage: [
             {
+                id: 'price_1PyQS1HM5zitWxD6Fvr1mzRy',
                 title: "Red extra $499",
                 include: [
                     " Análisis de mercado.",
@@ -45,6 +46,7 @@ function Extra() {
                 messageRestrictions: true,
             },
             {
+                id: 'price_1PyQSZHM5zitWxD6OeWUrZX8',
                 title: "Campaña extra $399 MXN",
                 description: null,
                 include: [
@@ -57,6 +59,7 @@ function Extra() {
                 messageRestrictions: true,
             },
             {
+                id: 'price_1PyQTfHM5zitWxD6GYt57BGO',
                 title: "Servicio de revisión $499 MXN",
                 description: null,
                 include: [

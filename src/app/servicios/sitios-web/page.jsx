@@ -31,6 +31,7 @@ function Website() {
         colorCard: "#c89d85",
         dataPackage: [
             {
+                id: 'price_1PyQOdHM5zitWxD6G0Yuk9fb',
                 title: "Landing Page $5,990 MXN",
                 include: [
                     "*Único pago (posteriormente pagarás la renovación del hosting y mantenimiento de tu sitio:  $200 USD AL AÑO O $15 USD AL MES SOLO MANTENIMIENTO)",
@@ -39,6 +40,7 @@ function Website() {
                 messageRestrictions: true,
             },
             {
+                id: 'price_1PyQPEHM5zitWxD6vmHMRFt4',
                 title: "Informativo $8,999 MXN",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",
@@ -47,6 +49,7 @@ function Website() {
                 messageRestrictions: true,
             },
             {
+                id: 'price_1PyQPeHM5zitWxD6qwonIkGU',
                 title: "Ecommerce a WhatsApp Económico $13,999 MXN",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",
@@ -55,6 +58,7 @@ function Website() {
                 messageRestrictions: true,
             },
             {
+                id: 'price_1PyQQYHM5zitWxD6p3u2yWIT',
                 title: "Ecommerce con Pasarela de Pago Económico $15,999 MXN",
                 include: [
                     "Página web diseñada específicamente, para convertir visitantes en leads.",

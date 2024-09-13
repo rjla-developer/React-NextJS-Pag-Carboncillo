@@ -42,6 +42,7 @@ function Campaigns() {
     colorCard: "#7E34C9",
     dataPackage: [
       {
+        id: 'price_1PyQ34HM5zitWxD6GY6nsACj',
         title: "Google Ads Display $1,599 MXN",
         description: null,
         include: [
@@ -55,6 +56,7 @@ function Campaigns() {
         messageRestrictions: true,
       },
       {
+        id: 'price_1PyQ3XHM5zitWxD6kdnK52lv',
         title: "Google Search $649 MXN",
         description: null,
         include: [
@@ -67,6 +69,7 @@ function Campaigns() {
         messageRestrictions: true,
       },
       {
+        id: 'price_1PyQ4AHM5zitWxD6Djs25vgJ',
         title: "Facebook Ads $649 MXN",
         description: null,
         include: [

@@ -46,6 +46,7 @@ function BrandDesign() {
         colorCard: "#B45201",
         dataPackage: [
             {
+                id: 'price_1PyQNyHM5zitWxD6vgaG2uAe',
                 title: "Diseño de marca $4,999 MXN",
                 description: "Nuestro enfoque holístico incluye desde la creación de un logotipo y sus variaciones, pasando por la selección meticulosa de colores y tipografías, hasta la definición de un estilo gráfico único que elevará tu presencia en cualquier medio. ",
                 include: null,
